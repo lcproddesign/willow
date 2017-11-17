@@ -1,7 +1,16 @@
 @import '_variables';
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom';
 
-$line-height: 1.8;
+.brandWrap * {
+  @include box-sizing(border-box);
+}
+.brandWrap *:before,
+.brandWrap *:after {
+  @include box-sizing(border-box);
+}
+
+
+$line-height: 1.5;
 $gry1:#333;
 $gry2:#5f6062;
 $gry3:#8b8d92;
