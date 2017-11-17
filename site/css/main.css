@@ -1363,7 +1363,10 @@ hr {
     padding-left: 0; } }
 
 .brandHero--logo {
-  padding-bottom: 36px; }
+  padding-bottom: 36px;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto; }
   @media (max-width: 767px) {
     .brandHero--logo {
       display: flex;
@@ -1374,7 +1377,7 @@ hr {
 
 @media (max-width: 767px) {
   .brandHero--logo img {
-    width: 110px;
+    width: 100px;
     margin: 72px 0 30px 5%; } }
 
 .brandHero--description {
@@ -1542,6 +1545,11 @@ hr {
       height: auto;
       background-image: url(../img/collabbackground_mob.jpg);
       background-size: 100% auto; } }
+
+.brandCollab--crossover img {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 10px; }
 
 .brandCollab--pretitle {
   margin-bottom: 24px; }

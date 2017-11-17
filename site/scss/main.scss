@@ -33,10 +33,10 @@ $inner-padding: 0 30px;
 	@media (max-width: $screen-xs-max) { display: block; max-height:inherit; height: auto; background: none;} }
 .brandHero [class*='col-'] {
 	@media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
-.brandHero--logo {padding-bottom:36px;
+.brandHero--logo {padding-bottom:36px; width:240px; margin-left:auto; margin-right:auto;
 	@media (max-width: $screen-xs-max) {display: flex; align-items:center; padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
-.brandHero--logo img {
-	@media (max-width: $screen-xs-max) {width:110px; margin:72px 0 30px 5%;} }
+.brandHero--logo img { 
+	@media (max-width: $screen-xs-max) {width:100px; margin:72px 0 30px 5%;} }
 .brandHero--description {font-size:$base-font; color:#fff; text-align: center; line-height:$line-height;
 	@media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
 .brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px;}
@@ -81,6 +81,7 @@ $inner-padding: 0 30px;
 
 .brandCollab {min-height:600px; height: 60vh; display: flex; align-items:center; justify-content:center; text-align:center; color:#fff; background: url(../img/collabbackground.jpg) no-repeat top center; background-size: cover;
 	@media (max-width: $screen-xs-max) {padding: 60px 0;min-height: auto; height: auto; height: auto; background-image: url(../img/collabbackground_mob.jpg); background-size: 100% auto;} }
+.brandCollab--crossover img{width:40px;height:40px; padding-bottom:10px;}
 .brandCollab--pretitle {@extend .brandPretitle; margin-bottom:24px}
 .brandCollab--title {@extend .brandTitle;}
 
