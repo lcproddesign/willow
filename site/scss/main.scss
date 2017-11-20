@@ -65,7 +65,7 @@ $inner-padding: 0 30px;
 .brandCollection {text-align: center; padding:$inner-padding; 
 	@media (max-width: $screen-xs-max) {padding:0} }
 .brandCollection .col-xs-6, .brandCollection .col-xs-12 {
-	@media (max-width: $screen-xs-max) {margin-bottom:42px;} }
+	@media (max-width: $screen-xs-max) {margin:30px 0 12px 0;} }
 .brandCollection--description {font-size:$base-font; margin-bottom:40px;}
 .brandCollection--range {@extend .brandPretitle; margin-bottom:12px;}
 .brandCollection--title {@extend .brandTitle;}
@@ -82,7 +82,9 @@ $inner-padding: 0 30px;
 .brandTile--actions .btn {display:inline-block; width: 44%;}
 .brandTile--actions .btn:first-child {margin-right:3%;}
 .brandTile--actions .btn:last-child {margin-left:3%;}
-.brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 0 150px; margin-bottom:40px;}
+.brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 0 150px; margin-bottom:40px;
+	@media (max-width: $screen-sm-max) {padding: 0 50px;}
+	@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 .brandTile--colours .yarnColour{width:24px;height:24px; border-radius: 50%; margin:3px; background-color:#ccc;}
 
 .brandReviews {padding:64px 0 70px; text-align:center; background: #F4F4F4 url(../img/reviewbackground.jpg) no-repeat top center; background-size: auto 100%;}
