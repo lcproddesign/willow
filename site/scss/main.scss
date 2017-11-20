@@ -33,10 +33,10 @@ $inner-padding: 0 30px;
 	@media (max-width: $screen-xs-max) { display: block; max-height:inherit; height: auto; background: none;} }
 .brandHero [class*='col-'] {
 	@media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
-.brandHero--logo {padding-bottom:36px; width:240px; margin-left:auto; margin-right:auto;
+.brandHero--logo {padding-bottom:36px;
 	@media (max-width: $screen-xs-max) {display: flex; align-items:center; padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
-.brandHero--logo img { 
-	@media (max-width: $screen-xs-max) {width:100px; margin:72px 0 30px 5%;} }
+.brandHero--logo img {
+	@media (max-width: $screen-xs-max) {width:110px; margin:72px 0 30px 5%;} }
 .brandHero--description {font-size:$base-font; color:#fff; text-align: center; line-height:$line-height;
 	@media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
 .brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px;}
@@ -49,10 +49,14 @@ $inner-padding: 0 30px;
 .brandNav--nav-selected {border-right:4px solid $gry1}
 .brandNav--nav-selected a {color:$gry1; font-weight:bold;}
 
+#brandNav--wrap {position: inherit;}
+.stuck {position:fixed; top:0; padding-left:12px; z-index:99;}
+.stuck.unstuck {position:absolute; top:inherit; bottom: 80px;}
+
 .imageContainer {position: relative; width:100%; padding-bottom:100%;}
 .imageContainer img {width:100%; height:100%; position: absolute; top:0; left:0;}
 
-.brandCollections {padding-top:80px; background: url(../img/brandbackground1.jpg) no-repeat 82% 40px; background-size: 80% auto;
+.brandCollections {position: relative; padding-top:80px; background: url(../img/brandbackground1.jpg) no-repeat 82% 40px; background-size: 80% auto;
 	@media (max-width: $screen-xs-max) {padding-top:6px;} }
 .brandCollection {text-align: center; padding:$inner-padding; 
 	@media (max-width: $screen-xs-max) {padding:0} }
@@ -65,7 +69,7 @@ $inner-padding: 0 30px;
 .brandTile {position: relative; display: flex; height: 100%;}
 .brandTile:before {opacity: 0; visibility: hidden; content:" "; position: absolute; height: 100%; width:100%; background: rgba(0,0,0,0.3); transition:all .2s ease-in-out;}
 .brandTile:hover:before {opacity: 1; visibility: visible;}
-.brandTile:hover .brandTile--hover {visibility: visible; opacity: 1; transition:all .2s ease-in-out}
+.brandTile:hover .brandTile--hover {visibility: visible; opacity: 1; transition:all .2s ease-in-out;}
 .brandTile--hover {width:100%; padding:30px; bottom:0; visibility: hidden; opacity: 0; position: absolute; transition:all .2s ease-in-out;
 	@media (max-width: $screen-xs-max) {display: none;} }
 .brandTile--description {color:#fff; font-size:$base-font; line-height:$line-height; padding:0 30px;}
@@ -84,6 +88,8 @@ $inner-padding: 0 30px;
 .brandCollab--crossover img{width:40px;height:40px; padding-bottom:10px;}
 .brandCollab--pretitle {@extend .brandPretitle; margin-bottom:24px}
 .brandCollab--title {@extend .brandTitle;}
+.brandCollab--title span {display: block; white-space: nowrap;}
+.brandCollab--title em {font-style: normal}
 
 .collabCollections {text-align: center;}
 .collabCollection {padding:$inner-padding;
@@ -94,9 +100,13 @@ $inner-padding: 0 30px;
 .collabTile--name {@extend .brandSubtitle;}
 .collabCollection--cta .btn {display: inline-block;}
 
-.brandProjects {position:relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; align-content: center;}
-.brandProjects--overlay {position: absolute; max-width:50%; background: rgba(255,255,255,0.95); padding: 42px 60px;}
-.brandProjects--overlay--title {font-size: 30px; margin-bottom: 18px;}
+
+.brandProjects {position:relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; align-content: center;
+	@media (max-width: $screen-xs-max) {margin-bottom:60px;} }
+.brandProjects--overlay {position: absolute; max-width:50%; background: rgba(255,255,255,0.95); padding: 42px 60px;
+	@media (max-width: $screen-xs-max) {position: relative; max-width: inherit; padding:36px 12px 18px} }
+.brandProjects--overlay--title {font-size: 30px; margin-bottom: 18px;
+	@media (max-width: $screen-xs-max) {font-size:18px;} }
 .brandProjects--tile {flex:20%; overflow: hidden; display: inline-block;
 	@media (max-width: $screen-xs-max) {flex:33.333333333%} }
 .brandProjects--tile img {width:100%; height: 100%;}

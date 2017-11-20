@@ -4,6 +4,9 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/sticky.min.js"></script>
 		<title>Willow &amp; Lark</title>
 	</head>
 	<body class="brandWrap">
@@ -29,7 +32,7 @@
 		<div class="brandCollections">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 hidden-xs hidden-sm">
+					<div id="brandNav--wrap" class="col-md-2 hidden-xs hidden-sm">
 						<div class="brandNav">
 							<div class="brandNav--logo">
 								<img src="img/wandl-logo-lite.svg" />
@@ -39,20 +42,19 @@
 								<li><a href="#">Ramble</a></li>
 								<li><a href="#">Plume</a></li>
 								<li><a href="#">Woodland</a></li>
-								<li><a href="#">Reviews</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-md-10">
 						<div class="row">
-								<div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-									<p class="brandCollection--description hidden-xs">
-						Life in the British countryside inspires people all over the world, evoking time spent enjoying rich, varied landscapes, with steaming cups of tea, wellies and umbrellas at the ready.  British design is just as celebrated, for its heritage of subtle, quirky touches, rigorous attention to detail and exceptional quality.
-						Willow & Lark is a new yarn brand inspired by this distinctively British personality, celebrating the colours of Britain’s natural landscapes and reflecting the best of British design in everything we do – from the design of our logo to the twist of our yarn and the edge on our designs.
-						We’re proud to work with some of the world’s best yarn producers to offer knitters an exceptional knitting experience with every Willow & Lark project.
-							</p>
-								</div>
+							<div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+								<p class="brandCollection--description hidden-xs">
+									Life in the British countryside inspires people all over the world, evoking time spent enjoying rich, varied landscapes, with steaming cups of tea, wellies and umbrellas at the ready.  British design is just as celebrated, for its heritage of subtle, quirky touches, rigorous attention to detail and exceptional quality.
+									Willow & Lark is a new yarn brand inspired by this distinctively British personality, celebrating the colours of Britain’s natural landscapes and reflecting the best of British design in everything we do – from the design of our logo to the twist of our yarn and the edge on our designs.
+									We’re proud to work with some of the world’s best yarn producers to offer knitters an exceptional knitting experience with every Willow & Lark project.
+								</p>
 							</div>
+						</div>
 						<!--Collection 1-->
 						<div class="brandCollection">
 							<div class="row">
@@ -385,7 +387,7 @@
 			</div>
 		</div>
 		<!--reviews-->
-		<div class="brandReviews">
+		<div id="way1" class="brandReviews">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1">
@@ -408,10 +410,10 @@
 					<div class="col-sm-12">
 						<div class="brandCollab--pretitle">Designer Collaboration</div>
 						<div class="brandCollab--title"><span>Willow &amp; Lark</span>
-							<span class="brandCollab--crossover">
-								<img src='img/crossover.svg'>
-							</span>
-							<span>Debbie Bliss</span></div>
+						<span class="brandCollab--crossover">
+							<img src='img/crossover.svg'>
+						</span>
+						<span>Debbie Bliss</span></div>
 					</div>
 				</div>
 			</div>
@@ -444,7 +446,7 @@
 											<img src="img/collabtile2.jpg" />
 										</div>
 									</a>
-									<div class="collabbTile--name">Edward Jumper</div>
+									<div class="collabTile--name">Edward Jumper</div>
 									<a href="#" class="collabCollection--cta btn btn-primary visible-xs">
 										Get pattern
 									</a>
@@ -495,5 +497,20 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var sticky = new Waypoint.Sticky({
+			element: $('.brandNav')[0]
+			})
+			var waypoints = $('#way1').waypoint({
+			handler: function(direction) {
+			$('.brandNav').toggleClass('unstuck')
+			}, offset: $('.brandNav').height() + 110 + 'px'
+			})
+			// $('.some-element').waypoint(function(direction) {
+			//   // do things
+			// }, {
+			//   context: '.scrollable-element'
+			// })
+		</script>
 	</body>
 </html>

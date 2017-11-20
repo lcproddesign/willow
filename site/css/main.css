@@ -1363,10 +1363,7 @@ hr {
     padding-left: 0; } }
 
 .brandHero--logo {
-  padding-bottom: 36px;
-  width: 240px;
-  margin-left: auto;
-  margin-right: auto; }
+  padding-bottom: 36px; }
   @media (max-width: 767px) {
     .brandHero--logo {
       display: flex;
@@ -1377,7 +1374,7 @@ hr {
 
 @media (max-width: 767px) {
   .brandHero--logo img {
-    width: 100px;
+    width: 110px;
     margin: 72px 0 30px 5%; } }
 
 .brandHero--description {
@@ -1427,6 +1424,20 @@ hr {
   color: #333;
   font-weight: bold; }
 
+#brandNav--wrap {
+  position: inherit; }
+
+.stuck {
+  position: fixed;
+  top: 0;
+  padding-left: 12px;
+  z-index: 99; }
+
+.stuck.unstuck {
+  position: absolute;
+  top: inherit;
+  bottom: 80px; }
+
 .imageContainer {
   position: relative;
   width: 100%;
@@ -1440,6 +1451,7 @@ hr {
   left: 0; }
 
 .brandCollections {
+  position: relative;
   padding-top: 80px;
   background: url(../img/brandbackground1.jpg) no-repeat 82% 40px;
   background-size: 80% auto; }
@@ -1554,6 +1566,13 @@ hr {
 .brandCollab--pretitle {
   margin-bottom: 24px; }
 
+.brandCollab--title span {
+  display: block;
+  white-space: nowrap; }
+
+.brandCollab--title em {
+  font-style: normal; }
+
 .collabCollections {
   text-align: center; }
 
@@ -1585,16 +1604,27 @@ hr {
   justify-content: center;
   align-items: center;
   align-content: center; }
+  @media (max-width: 767px) {
+    .brandProjects {
+      margin-bottom: 60px; } }
 
 .brandProjects--overlay {
   position: absolute;
   max-width: 50%;
   background: rgba(255, 255, 255, 0.95);
   padding: 42px 60px; }
+  @media (max-width: 767px) {
+    .brandProjects--overlay {
+      position: relative;
+      max-width: inherit;
+      padding: 36px 12px 18px; } }
 
 .brandProjects--overlay--title {
   font-size: 30px;
   margin-bottom: 18px; }
+  @media (max-width: 767px) {
+    .brandProjects--overlay--title {
+      font-size: 18px; } }
 
 .brandProjects--tile {
   flex: 20%;
