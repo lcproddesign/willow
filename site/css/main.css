@@ -1838,6 +1838,8 @@ hr {
   background-color: #ccc; }
 
 .brandReviews {
+  position: relative;
+  z-index: 999;
   padding: 64px 0 70px;
   text-align: center;
   background: #F4F4F4 url(../img/reviewbackground.jpg) no-repeat top center;
@@ -1848,6 +1850,8 @@ hr {
   line-height: 1.5; }
 
 .brandCollab {
+  position: relative;
+  z-index: 999;
   min-height: 600px;
   height: 60vh;
   display: flex;
