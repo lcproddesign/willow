@@ -1555,6 +1555,18 @@ hr {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.btn-default {
+  border: 1px solid #d4d4d4;
+  color: #FFF;
+  background-color: transparent; }
+  .btn-default:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    transition: background-color 0.3s ease; }
+
+.btn-primary:hover {
+  transition: background-color 0.3s ease; }
+
 .brandPretitle, .brandHero--scroll, .brandCollection--range, .brandReviews--pretitle, .brandCollab--pretitle {
   font-size: 14px;
   letter-spacing: 6px;
@@ -1748,12 +1760,21 @@ hr {
 .brandTile:hover .brandTile--hover {
   visibility: visible;
   opacity: 1;
-  transition: all .2s ease-in-out; }
+  transition: all .2s ease-in-out;
+  background: rgba(255, 255, 255, 0);
+  background: -moz-linear-gradient(top, rgba(65, 72, 70, 0.2) 10%, rgba(65, 72, 70, 0.8) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(10%, rgba(65, 72, 70, 0.2)), color-stop(100%, rgba(65, 72, 70, 0.8)));
+  background: -webkit-linear-gradient(top, rgba(65, 72, 70, 0.2) 10%, rgba(65, 72, 70, 0.8) 100%);
+  background: -o-linear-gradient(top, rgba(65, 72, 70, 0.2) 10%, rgba(65, 72, 70, 0.8) 100%);
+  background: -ms-linear-gradient(top, rgba(65, 72, 70, 0.2) 10%, rgba(65, 72, 70, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(65, 72, 70, 0.2) 10%, rgba(65, 72, 70, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#414846', GradientType=0 ); }
 
 .brandTile--hover {
   width: 100%;
+  height: 100%;
   padding: 30px;
-  bottom: 0;
+  top: 0;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -1766,20 +1787,29 @@ hr {
   color: #fff;
   font-size: 16px;
   line-height: 1.5;
-  padding: 0 30px; }
+  text-align: left; }
+
+.brandTile--actions {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0; }
 
 .brandFullColTile--name {
   margin: 20px 0 10px; }
 
 .brandTile--actions .btn {
   display: inline-block;
-  width: 44%; }
+  width: 40%;
+  border-radius: 2px;
+  height: 40px;
+  line-height: 26px; }
 
 .brandTile--actions .btn:first-child {
-  margin-right: 3%; }
+  margin-right: 6px; }
 
 .brandTile--actions .btn:last-child {
-  margin-left: 3%; }
+  margin-left: 6px; }
 
 .brandTile--colours {
   display: flex;

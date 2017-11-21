@@ -19,6 +19,14 @@ $gry4:#d4d4d4;
 $base-font: 16px;
 $inner-padding: 0 30px;
 
+//Bootstrap Defaullt button style override
+
+.btn-default{border:1px solid $gry4; color:#FFF; background-color:transparent;
+		&:hover {background-color:rgba(255, 255, 255,0.2); color:#FFF; transition: background-color 0.3s ease;}
+}
+.btn-primary{&:hover{transition: background-color 0.3s ease;}} 
+
+
 //Extension only
 .brandPretitle {font-size:14px; letter-spacing: 6px; text-transform:uppercase;
 	@media (max-width: $screen-xs-max) {font-size: 11px; letter-spacing: 3px;} }
@@ -72,16 +80,25 @@ $inner-padding: 0 30px;
 
 .brandTile {position: relative; display: flex; height: 100%;}
 .brandTile:before {opacity: 0; visibility: hidden; content:" "; position: absolute; height: 100%; width:100%; background: rgba(0,0,0,0.3); transition:all .2s ease-in-out;}
-.brandTile:hover:before {opacity: 1; visibility: visible;}
-.brandTile:hover .brandTile--hover {visibility: visible; opacity: 1; transition:all .2s ease-in-out;}
-.brandTile--hover {width:100%; padding:30px; bottom:0; visibility: hidden; opacity: 0; position: absolute; transition:all .2s ease-in-out;
+.brandTile:hover:before { opacity: 1; visibility: visible;}
+.brandTile:hover .brandTile--hover {visibility: visible; opacity: 1; transition:all .2s ease-in-out;
+background: rgba(255,255,255,0);
+background: -moz-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(10%, rgba(65,72,70,0.2)), color-stop(100%, rgba(65,72,70,0.8)));
+background: -webkit-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
+background: -o-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
+background: -ms-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
+background: linear-gradient(to bottom, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#414846', GradientType=0 );}
+.brandTile--hover {width:100%; height:100%; padding:30px; top:0; visibility: hidden; opacity: 0; position: absolute; transition:all .2s ease-in-out;
 	@media (max-width: $screen-xs-max) {display: none;} }
-.brandTile--description {color:#fff; font-size:$base-font; line-height:$line-height; padding:0 30px;}
+.brandTile--description {color:#fff; font-size:$base-font; line-height:$line-height; text-align:left;} 
+.brandTile--actions{position: absolute; bottom: 24px; left:0; right:0;}
 .brandTile--name {@extend .brandSubtitle;}
 .brandFullColTile--name {@extend .brandSubtitle; margin: 20px 0 10px;}
-.brandTile--actions .btn {display:inline-block; width: 44%;}
-.brandTile--actions .btn:first-child {margin-right:3%;}
-.brandTile--actions .btn:last-child {margin-left:3%;}
+.brandTile--actions .btn {display:inline-block; width: 40%; border-radius:2px; height:40px; line-height:26px;}
+.brandTile--actions .btn:first-child {margin-right:6px;}
+.brandTile--actions .btn:last-child {margin-left:6px;}
 .brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 0 150px; margin-bottom:40px;
 	@media (max-width: $screen-sm-max) {padding: 0 50px;}
 	@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
