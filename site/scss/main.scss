@@ -123,9 +123,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .collabCollection .col-sm-6 {margin-bottom:42px}
 .collabCollections--description {padding:$inner-padding; font-size:$base-font; margin: 72px 0 38px;
 	@media (max-width: $screen-xs-max) {padding:0; margin: 30px 0; } }
-.collabTile--name {@extend .brandSubtitle;}
-.collabCollection--cta .btn {display: inline-block;}
-
 
 .brandProjects {position:relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; align-content: center;
 	@media (max-width: $screen-xs-max) {margin-bottom:60px;} }

@@ -1589,11 +1589,11 @@ hr {
     .brandTitle, .brandCollection--title, .brandReviews--title, .brandCollab--title {
       font-size: 30px; } }
 
-.brandSubtitle, .brandTile--name, .brandFullColTile--name, .collabTile--name {
+.brandSubtitle, .brandTile--name, .brandFullColTile--name {
   font-size: 18px;
   margin: 20px 0 40px; }
   @media (max-width: 767px) {
-    .brandSubtitle, .brandTile--name, .brandFullColTile--name, .collabTile--name {
+    .brandSubtitle, .brandTile--name, .brandFullColTile--name {
       font-size: 16px;
       margin: 18px 0 12px; } }
 
@@ -1901,9 +1901,6 @@ hr {
     .collabCollections--description {
       padding: 0;
       margin: 30px 0; } }
-
-.collabCollection--cta .btn {
-  display: inline-block; }
 
 .brandProjects {
   position: relative;
