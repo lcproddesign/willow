@@ -7,10 +7,11 @@
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/jquery.waypoints.min.js"></script>
 		<script src="js/sticky.min.js"></script>
+		<script src="js/script.js"></script>
 		<title>Willow &amp; Lark</title>
 	</head>
 	<body class="brandWrap">
-		<div class="brandHero">
+		<div class="brandHero" id="story">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
@@ -38,10 +39,10 @@
 								<img src="img/wandl-logo-lite.svg" />
 							</div>
 							<ul class="brandNav--nav">
-								<li class="brandNav--nav-selected"><a href="#">Story</a></li>
-								<li><a href="#">Ramble</a></li>
-								<li><a href="#">Plume</a></li>
-								<li><a href="#">Woodland</a></li>
+								<li class="brandNav--nav-selected"><a href="#story">Story</a></li>
+								<li><a href="#ramble">Ramble</a></li>
+								<li><a href="#plume">Plume</a></li>
+								<li><a href="#woodland">Woodland</a></li>
 							</ul>
 						</div>
 					</div>
@@ -56,7 +57,7 @@
 							</div>
 						</div>
 						<!--Collection 1-->
-						<div class="brandCollection">
+						<div class="brandCollection" id="ramble">
 							<div class="row">
 								<div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
 									<div class="brandCollection--range">A really splendid superwash wool</div>
@@ -195,7 +196,7 @@
 			</div>
 		</div>
 		<!--Collection 2-->
-		<div class="brandCollections">
+		<div class="brandCollections" id="plume">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2 hidden-xs hidden-sm">
@@ -336,7 +337,7 @@
 			</div>
 		</div>
 		<!--Collection 3-->
-		<div class="brandCollections">
+		<div class="brandCollections" id="woodland">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2 hidden-xs hidden-sm">
@@ -477,7 +478,7 @@
 			</div>
 		</div>
 		<!--reviews-->
-		<div class="brandReviews">
+		<div class="brandReviews"  id="reviews">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1">
@@ -494,7 +495,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="brandCollab">
+		<div class="brandCollab" id="collaboration">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
