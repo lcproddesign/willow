@@ -1591,6 +1591,12 @@ a.divLink {
   filter: alpha(opacity=0); }
 
 /*workaround to make clickable in IE */
+.separator {
+  width: 72px;
+  height: 3px;
+  background-color: #5f6062;
+  margin: 30px auto 60px auto; }
+
 .brandPretitle, .brandHero--scroll, .brandCollection--range, .brandReviews--pretitle, .brandCollab--pretitle {
   font-size: 14px;
   letter-spacing: 6px;
@@ -1733,7 +1739,7 @@ a.divLink {
 
 .brandCollections {
   position: relative;
-  padding-top: 80px;
+  padding-top: 42px;
   background: url(../img/brandbackground1.jpg) no-repeat 82% 40px;
   background-size: 80% auto; }
   @media (max-width: 991px) {
@@ -1756,7 +1762,7 @@ a.divLink {
 
 .brandCollection--description {
   font-size: 16px;
-  margin-bottom: 40px; }
+  margin-bottom: 24px; }
 
 .brandCollection--range {
   margin-bottom: 12px; }
