@@ -1682,12 +1682,11 @@ hr {
 .brandNav--nav a {
   color: #8b8d92; }
 
-.brandNav--nav-selected {
-  border-right: 4px solid #333; }
+.brandNav--nav li.selected {
+  border-right: 3px solid #333; }
 
-.brandNav--nav-selected a {
-  color: #333;
-  font-weight: bold; }
+.brandNav--nav li.selected a {
+  color: #333; }
 
 #brandNav--wrap {
   position: inherit; }

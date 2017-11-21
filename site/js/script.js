@@ -7,6 +7,10 @@ $(document).ready(function(){
       // Prevent default anchor click behavior
       event.preventDefault();
 
+       	//Change selected state of current menu
+       	$('.brandNav--nav li').removeClass('selected');
+    	$(this).closest('li').addClass('selected');
+
       // Store hash
       var hash = this.hash;
 
@@ -15,7 +19,6 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
