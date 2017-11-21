@@ -20,7 +20,7 @@ $base-font: 16px;
 $inner-padding: 0 30px;
 
 //Bootstrap Defaullt button style override
-
+.btn {display:inline-block; min-width: 40%; border-radius:2px; height:40px; line-height:26px;}
 .btn-default{border:1px solid $gry4; color:#FFF; background-color:transparent;
 		&:hover {background-color:rgba(255, 255, 255,0.2); color:#FFF; transition: background-color 0.3s ease;}
 }
@@ -76,7 +76,8 @@ $inner-padding: 0 30px;
 	@media (max-width: $screen-xs-max) {margin:30px 0 12px 0;} }
 .brandCollection--description {font-size:$base-font; margin-bottom:40px;}
 .brandCollection--range {@extend .brandPretitle; margin-bottom:12px;}
-.brandCollection--title {@extend .brandTitle;}
+.brandCollection--title {@extend .brandTitle;
+	@media (max-width: $screen-xs-max) {margin-bottom:0;}}
 
 .brandTile {position: relative; display: flex; height: 100%;}
 .brandTile:before {opacity: 0; visibility: hidden; content:" "; position: absolute; height: 100%; width:100%; background: rgba(0,0,0,0.3); transition:all .2s ease-in-out;}
@@ -96,7 +97,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandTile--actions{position: absolute; bottom: 24px; left:0; right:0;}
 .brandTile--name {@extend .brandSubtitle;}
 .brandFullColTile--name {@extend .brandSubtitle; margin: 20px 0 10px;}
-.brandTile--actions .btn {display:inline-block; width: 40%; border-radius:2px; height:40px; line-height:26px;}
 .brandTile--actions .btn:first-child {margin-right:6px;}
 .brandTile--actions .btn:last-child {margin-left:6px;}
 .brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 0 150px; margin-bottom:40px;
@@ -129,13 +129,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .brandProjects {position:relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; align-content: center;
 	@media (max-width: $screen-xs-max) {margin-bottom:60px;} }
-.brandProjects--overlay {position: absolute; max-width:50%; background: rgba(255,255,255,0.95); padding: 42px 60px;
-	@media (max-width: $screen-xs-max) {position: relative; max-width: inherit; padding:36px 12px 18px} }
-.brandProjects--overlay--title {font-size: 30px; margin-bottom: 18px;
+.brandProjects--overlay {position: absolute; max-width:40%; background: rgba(255,255,255,0.95); padding: 42px 60px;
+	@media (max-width: $screen-sm-max) {position: absolute; max-width:60%; padding:36px 60px 18px;} 
+	@media (max-width: $screen-xs-max) {position: relative; max-width: 100%; padding:36px 12px 18px;} }
+.brandProjects--overlay .btn {
+	@media (max-width: $screen-xs-max) {min-width:100%;} }
+.brandProjects--overlay--title {font-size: 24px; margin-bottom: 18px;
 	@media (max-width: $screen-xs-max) {font-size:18px;} }
 .brandProjects--tile {flex:20%; overflow: hidden; display: inline-block;
 	@media (max-width: $screen-xs-max) {flex:33.333333333%} }
 .brandProjects--tile img {width:100%; height: 100%;}
+
 
 
 

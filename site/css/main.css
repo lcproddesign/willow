@@ -1555,6 +1555,13 @@ hr {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.btn {
+  display: inline-block;
+  min-width: 40%;
+  border-radius: 2px;
+  height: 40px;
+  line-height: 26px; }
+
 .btn-default {
   border: 1px solid #d4d4d4;
   color: #FFF;
@@ -1738,6 +1745,10 @@ hr {
 .brandCollection--range {
   margin-bottom: 12px; }
 
+@media (max-width: 767px) {
+  .brandCollection--title {
+    margin-bottom: 0; } }
+
 .brandTile {
   position: relative;
   display: flex;
@@ -1797,13 +1808,6 @@ hr {
 
 .brandFullColTile--name {
   margin: 20px 0 10px; }
-
-.brandTile--actions .btn {
-  display: inline-block;
-  width: 40%;
-  border-radius: 2px;
-  height: 40px;
-  line-height: 26px; }
 
 .brandTile--actions .btn:first-child {
   margin-right: 6px; }
@@ -1914,17 +1918,26 @@ hr {
 
 .brandProjects--overlay {
   position: absolute;
-  max-width: 50%;
+  max-width: 40%;
   background: rgba(255, 255, 255, 0.95);
   padding: 42px 60px; }
+  @media (max-width: 991px) {
+    .brandProjects--overlay {
+      position: absolute;
+      max-width: 60%;
+      padding: 36px 60px 18px; } }
   @media (max-width: 767px) {
     .brandProjects--overlay {
       position: relative;
-      max-width: inherit;
+      max-width: 100%;
       padding: 36px 12px 18px; } }
 
+@media (max-width: 767px) {
+  .brandProjects--overlay .btn {
+    min-width: 100%; } }
+
 .brandProjects--overlay--title {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 18px; }
   @media (max-width: 767px) {
     .brandProjects--overlay--title {
