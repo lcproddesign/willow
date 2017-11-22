@@ -1,6 +1,7 @@
 $(document).ready(function(){
+
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $('a').on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -24,4 +25,13 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+
+  //Image tile hover effects
+ $('.brandTile').hover(function() {
+ 		$(this).find('img').addClass('enlarge');
+ 		}, function(){
+ 		$(this).find('img').removeClass('enlarge');
+ 		});
+
 });

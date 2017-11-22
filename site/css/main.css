@@ -1728,6 +1728,7 @@ a.divLink {
 .imageContainer {
   position: relative;
   width: 100%;
+  overflow: hidden;
   /* padding-bottom:100%; */ }
 
 .imageContainer img {
@@ -1735,7 +1736,27 @@ a.divLink {
   height: 100%;
   /* position: absolute; */
   top: 0;
-  left: 0; }
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-timing-function: ease-in-out;
+  -moz-timing-function: ease-in-out;
+  timing-function: ease-in-out; }
+
+.imageContainer .enlarge {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-timing-function: ease-in-out;
+  -moz-timing-function: ease-in-out;
+  timing-function: ease-in-out; }
 
 .brandCollections {
   position: relative;
