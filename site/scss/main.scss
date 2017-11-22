@@ -113,18 +113,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandTile--actions .btn:first-child {margin-right:6px;}
 .brandTile--actions .btn:last-child {margin-left:6px;}
 .brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 10px 150px; margin-bottom:40px;
-	&.ramble{ padding: 10px 150px;
+	&.ramble{ padding: 10px 18.7%;
 		@media (max-width: $screen-sm-max) {padding: 10px 100px;}
 		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}
 	}
-	&.plume{ padding: 10px 180px;
+	&.plume{ padding: 10px 22.6%;
 		@media (max-width: $screen-sm-max) {padding: 10px 130px;}
 		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
-	&.woodland{ padding: 10px 185px;
-		@media (max-width: $screen-sm-max) {padding: 10px 130px;}
+	&.woodland{ padding: 10px 24.3%;
+		@media (max-width: $screen-md-max) {padding: 10px 22.5%;}
+		@media (max-width: $screen-sm-max) {padding: 10px 135px;}
 		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 @media (max-width: $screen-sm-max) {padding: 0 50px;}
 @media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
+/*Little hack for color dots layout for woodland : 0 */
+#wood-colour12 {margin-right:10px;
+@media (max-width: $screen-sm-max) {margin-right:10px;}
+@media (max-width: $screen-xs-max) {margin-right:3px;}
+}
+
 .brandTile--colours .yarnColour{position:relative; width:24px;height:24px; border-radius: 50%; margin:3px; background-color:#ccc; cursor: pointer;}
 .brandReviews {position:relative; z-index:999; padding:64px 0 70px; text-align:center; background: #F4F4F4 url(../img/reviewbackground.jpg) no-repeat top center; background-size: auto 100%;}
 .brandReviews--pretitle {@extend .brandPretitle;}
