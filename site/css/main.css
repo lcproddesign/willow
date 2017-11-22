@@ -1844,6 +1844,33 @@ a.divLink {
   justify-content: center;
   padding: 10px 150px;
   margin-bottom: 40px; }
+  .brandTile--colours.ramble {
+    padding: 10px 150px; }
+    @media (max-width: 991px) {
+      .brandTile--colours.ramble {
+        padding: 10px 100px; } }
+    @media (max-width: 767px) {
+      .brandTile--colours.ramble {
+        padding: 0 20px;
+        margin-bottom: 20px; } }
+  .brandTile--colours.plume {
+    padding: 10px 180px; }
+    @media (max-width: 991px) {
+      .brandTile--colours.plume {
+        padding: 10px 130px; } }
+    @media (max-width: 767px) {
+      .brandTile--colours.plume {
+        padding: 0 20px;
+        margin-bottom: 20px; } }
+  .brandTile--colours.woodland {
+    padding: 10px 185px; }
+    @media (max-width: 991px) {
+      .brandTile--colours.woodland {
+        padding: 10px 130px; } }
+    @media (max-width: 767px) {
+      .brandTile--colours.woodland {
+        padding: 0 20px;
+        margin-bottom: 20px; } }
   @media (max-width: 991px) {
     .brandTile--colours {
       padding: 0 50px; } }

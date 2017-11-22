@@ -15,7 +15,6 @@ $gry3:#8b8d92;
 $gry4:#d4d4d4;
 $base-font: 16px;
 $inner-padding: 0 30px;
-
 //Bootstrap Defaullt button style override
 .btn {display:inline-block; min-width: 40%; border-radius:2px; height:40px; line-height:26px;}
 .btn-default{border:1px solid $gry4; color:#FFF; background-color:transparent;
@@ -28,10 +27,8 @@ text-decoration: none;/* Makes sure the link doesn't get underlined */z-index: 1
 /* raises anchor tag above everything else in div */background-color: white;
 /*workaround to make clickable in IE */opacity: 0;/*workaround to make clickable in IE */
 filter: alpha(opacity=0);}/*workaround to make clickable in IE */
-
 //Separator
 .separator{width:72px; height:3px; background-color:$gry2; margin:30px auto 60px auto;}
-
 //Extension only
 .brandPretitle {font-size:14px; letter-spacing: 6px; text-transform:uppercase;
 @media (max-width: $screen-xs-max) {font-size: 11px; letter-spacing: 3px;} }
@@ -97,6 +94,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandTile--actions .btn:first-child {margin-right:6px;}
 .brandTile--actions .btn:last-child {margin-left:6px;}
 .brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 10px 150px; margin-bottom:40px;
+	&.ramble{ padding: 10px 150px;
+		@media (max-width: $screen-sm-max) {padding: 10px 100px;}
+		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}
+	}
+	&.plume{ padding: 10px 180px;
+		@media (max-width: $screen-sm-max) {padding: 10px 130px;}
+		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
+	&.woodland{ padding: 10px 185px;
+		@media (max-width: $screen-sm-max) {padding: 10px 130px;}
+		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 @media (max-width: $screen-sm-max) {padding: 0 50px;}
 @media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 .brandTile--colours .yarnColour{position:relative; width:24px;height:24px; border-radius: 50%; margin:3px; background-color:#ccc; cursor: pointer;}
