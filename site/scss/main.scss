@@ -2,12 +2,13 @@
 @import '_yarncolours';
 @import '_mixins';
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-custom';
+
 .brandWrap * {
-@include box-sizing(border-box);
+	@include box-sizing(border-box);
 }
 .brandWrap *:before,
 .brandWrap *:after {
-@include box-sizing(border-box);
+	@include box-sizing(border-box);
 }
 $line-height: 1.5;
 $gry1:#333;
@@ -32,34 +33,39 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .separator{width:72px; height:3px; background-color:$gry2; margin:30px auto 60px auto;}
 //Extension only
 .brandPretitle {font-size:14px; letter-spacing: 6px; text-transform:uppercase;
-@media (max-width: $screen-xs-max) {font-size: 11px; letter-spacing: 3px;} }
+	@media (max-width: $screen-xs-max) {font-size: 11px; letter-spacing: 3px;} }
 .brandTitle {font-size:48px;
-@media (max-width: $screen-xs-max) {font-size: 30px} }
+	@media (max-width: $screen-xs-max) {font-size: 30px} }
 .brandSubtitle {font-size:18px; margin: 20px 0 40px;
-@media (max-width: $screen-xs-max) {font-size:16px; margin: 18px 0 12px;} }
+	@media (max-width: $screen-xs-max) {font-size:16px; margin: 18px 0 12px;} }
 .brandWrap {font-family: 'Sorts Mill Goudy', serif;}
 .brandWrap a {text-decoration: none;}
-.brandHero {display: flex; align-items:center; max-height:640px; height: 90vh; justify-content:center; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto; position:relative;
-@media (max-width: $screen-sm-max) {height: 40vh;}
-@media (max-width: $screen-xs-max) { display: block; max-height:inherit; height: auto; background: none;} }
+.brandHero {display: flex; align-items:center; max-height:720px; height: 90vh; justify-content:center; background: url(../img/brandHero.jpg) no-repeat center center; background-size: 100% auto; position:relative;
+	@media (max-width: $screen-sm-max) {height: 40vh;}
+	@media (max-width: $screen-xs-max) { display: block; max-height:inherit; height: auto; background: none;} }
 .brandHero [class*='col-'] {
-@media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
-.brandHero--logo {padding-bottom:36px;
-@media (max-width: $screen-xs-max) {display: flex; align-items:center; padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
-.brandHero--logo img {width:250px;
-@media (max-width: $screen-xs-max) {width:110px; margin:72px 0 30px 5%;} }
-.brandHero--description {font-size:$base-font; color:#fff; text-align: center; line-height:$line-height;
-@media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
+	@media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
+.brandHero--wrapper {background-color:#FFF; color:$gry2; padding:24px 12px; border-radius:2px;
+  @include prefix((
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.2)
+  ), webkit moz);
+}
+.brandHero--logo {padding-bottom:36px; text-align:center;
+	@media (max-width: $screen-xs-max) {display: flex; align-items:center; padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
+.brandHero--logo img {width:200px;
+	@media (max-width: $screen-xs-max) {width:110px; margin:72px 0 30px 5%;} }
+.brandHero--description {font-size:$base-font; text-align: center; line-height:$line-height;
+	@media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
 .brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px;}
 .brandNav {padding-top:30px; width:145px;}
 .brandNav--logo {margin-bottom:30px; width:100%; text-align:right; padding-right:24px;
 }
 .brandNav.stuck .brandNav--logo img{width:110px; @include prefix((
-    transition: all 0.4s,
+    transition: all 0.3s,
    	timing-function: ease-in-out
   ), webkit moz);}
 .brandNav--logo img{width:90px; @include prefix((
-    transition: all 0.4s,
+    transition: all 0.3s,
    	timing-function: ease-in-out
   ), webkit moz);}
 .brandNav--nav {border-right:1px solid $gry4; list-style-type: none; margin:0; padding:0; text-align: right;}
@@ -86,16 +92,16 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
   ), webkit moz);
 }
 .brandCollections {position: relative; padding-top:42px; background: url(../img/brandbackground1.jpg) no-repeat 82% 40px; background-size: 80% auto;
-@media (max-width: $screen-sm-max) {padding-top:50px;}
-@media (max-width: $screen-xs-max) {padding-top:6px;} }
+	@media (max-width: $screen-sm-max) {padding-top:50px;}
+	@media (max-width: $screen-xs-max) {padding-top:6px;} }
 .brandCollection {text-align: center; padding:$inner-padding;
-@media (max-width: $screen-xs-max) {padding:0} }
+	@media (max-width: $screen-xs-max) {padding:0} }
 .brandCollection .col-xs-6, .brandCollection .col-xs-12 {
-@media (max-width: $screen-xs-max) {margin:30px 0 12px 0;} }
+	@media (max-width: $screen-xs-max) {margin:30px 0 12px 0;} }
 .brandCollection--description {font-size:$base-font; margin-bottom:24px;}
 .brandCollection--range {@extend .brandPretitle; margin-bottom:12px;}
 .brandCollection--title {@extend .brandTitle;
-@media (max-width: $screen-xs-max) {margin-bottom:0;}}
+	@media (max-width: $screen-xs-max) {margin-bottom:0;}}
 .brandTile {position: relative; display: flex; height: 100%;}
 .brandTile:before {opacity: 0; visibility: hidden; content:" "; position: absolute; height: 100%; width:100%; background: rgba(0,0,0,0.3); transition:all .2s ease-in-out;}
 .brandTile:hover:before { opacity: 1; visibility: visible;}
@@ -109,7 +115,7 @@ background: -ms-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 
 background: linear-gradient(to bottom, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#414846', GradientType=0 );}
 .brandTile--hover {width:100%; height:100%; padding:30px; top:0; visibility: hidden; opacity: 0; position: absolute; transition:all .2s ease-in-out;
-@media (max-width: $screen-xs-max) {display: none;} }
+	@media (max-width: $screen-xs-max) {display: none;} }
 .brandTile--description {color:#fff; font-size:$base-font; line-height:$line-height; text-align:left;}
 .brandTile--actions{position: absolute; bottom: 24px; left:0; right:0;}
 .brandTile--name {@extend .brandSubtitle;}
@@ -128,12 +134,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		@media (max-width: $screen-md-max) {padding: 10px 22.5%;}
 		@media (max-width: $screen-sm-max) {padding: 10px 135px;}
 		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
-@media (max-width: $screen-sm-max) {padding: 0 50px;}
-@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
+	@media (max-width: $screen-sm-max) {padding: 0 50px;}
+	@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 /*Little hack for color dots layout for woodland : 0 */
 #wood-colour12 {margin-right:10px;
-@media (max-width: $screen-sm-max) {margin-right:10px;}
-@media (max-width: $screen-xs-max) {margin-right:3px;}
+	@media (max-width: $screen-sm-max) {margin-right:10px;}
+	@media (max-width: $screen-xs-max) {margin-right:3px;}
 }
 
 .brandTile--colours .yarnColour{position:relative; width:24px;height:24px; border-radius: 50%; margin:3px; background-color:#ccc; cursor: pointer;}
@@ -142,7 +148,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandReviews--title {@extend .brandTitle;}
 .brandReviews--description, .brandReviews--user {font-size: $base-font; line-height: $line-height}
 .brandCollab {position:relative; z-index:999; min-height:600px; height: 60vh; display: flex; align-items:center; justify-content:center; text-align:center; color:#fff; background: url(../img/collabbackground.jpg) no-repeat top center; background-size: cover;
-@media (max-width: $screen-xs-max) {padding: 60px 0;min-height: auto; height: auto; height: auto; background-image: url(../img/collabbackground_mob.jpg); background-size: 100% auto;} }
+	@media (max-width: $screen-xs-max) {padding: 60px 0;min-height: auto; height: auto; height: auto; background-image: url(../img/collabbackground_mob.jpg); background-size: 100% auto;} }
 .brandCollab--crossover img{width:40px;height:40px; padding-bottom:10px;}
 .brandCollab--pretitle {@extend .brandPretitle; margin-bottom:24px;}
 .brandCollab--title {@extend .brandTitle;}
@@ -150,19 +156,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandCollab--title em {font-style: normal}
 .collabCollections {text-align: center;}
 .collabCollection {padding:$inner-padding;
-@media (max-width: $screen-xs-max) {padding:0} }
+	@media (max-width: $screen-xs-max) {padding:0} }
 .collabCollection .col-sm-6 {margin-bottom:42px}
 .collabCollections--description {padding:$inner-padding; font-size:$base-font; margin: 72px 0 38px;
-@media (max-width: $screen-xs-max) {padding:0; margin: 30px 0; } }
+	@media (max-width: $screen-xs-max) {padding:0; margin: 30px 0; } }
 .brandProjects {position:relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; align-content: center;
-@media (max-width: $screen-xs-max) {margin-bottom:60px;} }
+	@media (max-width: $screen-xs-max) {margin-bottom:60px;} }
 .brandProjects--overlay {position: absolute; max-width:40%; background: rgba(255,255,255,0.95); padding: 42px 60px;
-@media (max-width: $screen-sm-max) {position: absolute; max-width:60%; padding:36px 60px 18px;}
-@media (max-width: $screen-xs-max) {position: relative; max-width: 100%; padding:36px 12px 18px;} }
+	@media (max-width: $screen-sm-max) {position: absolute; max-width:60%; padding:36px 60px 18px;}
+	@media (max-width: $screen-xs-max) {position: relative; max-width: 100%; padding:36px 12px 18px;} }
 .brandProjects--overlay .btn {
-@media (max-width: $screen-xs-max) {min-width:100%;} }
+	@media (max-width: $screen-xs-max) {min-width:100%;} }
 .brandProjects--overlay--title {font-size: 24px; margin-bottom: 18px;
-@media (max-width: $screen-xs-max) {font-size:18px;} }
+	@media (max-width: $screen-xs-max) {font-size:18px;} }
 .brandProjects--tile {flex:20%; overflow: hidden; display: inline-block;
-@media (max-width: $screen-xs-max) {flex:33.333333333%} }
+	@media (max-width: $screen-xs-max) {flex:33.333333333%} }
 .brandProjects--tile img {width:100%; height: 100%;}
