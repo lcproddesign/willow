@@ -1,20 +1,5 @@
 $(document).ready(function(){
 
-	var sticky = new Waypoint.Sticky({
-			element: $('.brandNav')[0]
-			})
-			var waypoints = $('#way1').waypoint({
-			handler: function(direction) {
-			$('.brandNav').toggleClass('unstuck')
-			}, offset: $('.brandNav').height() + 110 + 'px'
-			})
-
-					// $('.some-element').waypoint(function(direction) {
-			//   // do things
-			// }, {
-			//   context: '.scrollable-element'
-			// })
-
   // Add smooth scrolling to all links
   $('a').on('click', function(event) {
 

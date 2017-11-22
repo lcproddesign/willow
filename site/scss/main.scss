@@ -46,25 +46,20 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 @media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
 .brandHero--logo {padding-bottom:36px;
 @media (max-width: $screen-xs-max) {display: flex; align-items:center; padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
-.brandHero--logo img {width:250px;
+.brandHero--logo img {
 @media (max-width: $screen-xs-max) {width:110px; margin:72px 0 30px 5%;} }
 .brandHero--description {font-size:$base-font; color:#fff; text-align: center; line-height:$line-height;
 @media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
 .brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px;}
-.brandNav {margin-top:30px; width:145px;}
-.brandNav--logo {margin-bottom:30px;width:100px;
-@include prefix((
-    transition: all 0.4s,
-   	timing-function: ease-in-out
-  ), webkit moz);
-}
-.brandNav--nav {border-right:1px solid $gry4; list-style-type: none; margin:0; padding:0; text-align: right;}
+.brandNav {margin-top:32px;}
+.brandNav--logo {margin-bottom:30px; text-align:right; padding-right:23px;}
+.brandNav--nav {border-right:2px solid $gry4; list-style-type: none; margin:0; padding:0; text-align: right;}
 .brandNav--nav li {padding: 10px 24px 8px 0; font-size:18px; margin-right:-4px;}
 .brandNav--nav a {color:$gry3}
 .brandNav--nav li.selected {border-right:3px solid $gry1}
 .brandNav--nav li.selected a {color:$gry1;}
 #brandNav--wrap {position: inherit;}
-.stuck {position:fixed; top:0; z-index:9;}
+.stuck {position:fixed; top:0; padding-left:12px; z-index:99;}
 .stuck.unstuck {position:absolute; top:inherit; bottom: 80px;}
 .imageContainer {position: relative; width:100%; overflow:hidden;/* padding-bottom:100%; */}
 .imageContainer img {width:100%; height:100%; /* position: absolute; */ top:0; left:0;
