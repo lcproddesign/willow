@@ -104,3 +104,40 @@ colour25:#a0345c
 background-color: map-get($wood-colour, 'colour'+$i);
 }
 }
+
+//Woodland
+$nest-colour:(
+colour1:#f0efeb,
+colour2:#f0ebe0,
+colour3:#d1d5cd,
+colour4:#bbbdc1,
+colour5:#96979b,
+colour6:#dacdbc,
+colour7:#ad9d90,
+colour8:#8a766b,
+colour9:#fcbe4c,
+colour10:#fddb90,
+colour11:#cad8b4,
+colour12:#a1c780,
+colour13:#3e635b,
+colour14:#8daaa5,
+colour15:#c8d6dd,
+colour16:#a4c8df,
+colour17:#58738b,
+colour18:#304466,
+colour19:#f5d9cc,
+colour20:#dcb5af,
+colour21:#eaaccb,
+colour22:#d46b77,
+colour23:#be4380,
+colour24:#b5273d,
+colour25:#d7cad3,
+colour26:#c3a9b6,
+colour27:#78617a,
+colour28:#7d3f52
+);
+@for $i from 1 through 28{
+#nest-colour#{$i}{
+background-color: map-get($nest-colour, 'colour'+$i);
+}
+}

@@ -29,7 +29,8 @@ text-decoration: none;/* Makes sure the link doesn't get underlined */z-index: 1
 /*workaround to make clickable in IE */opacity: 0;/*workaround to make clickable in IE */
 filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 //Separator
-.separator{width:72px; height:3px; background-color:$gry2; margin:30px auto 60px auto;}
+.separator{width:72px; height:3px; background-color:$gry2; margin:30px auto 60px auto;
+	@media (max-width: $screen-xs-max){margin:24px auto 12px auto;}}
 //Extension only
 .brandPretitle {font-size:14px; letter-spacing: 6px; text-transform:uppercase;
 	@media (max-width: $screen-xs-max) {font-size: 11px; letter-spacing: 3px;} }
@@ -44,13 +45,9 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 	@media (max-width: $screen-xs-max) { display: block; max-height:inherit; height: auto; background: none;} }
 .brandHero [class*='col-'] {
 	@media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
-.brandHero--wrapper {background-color:#FFF; color:$gry2; padding:24px 12px; border-radius:2px;
-  @include prefix((
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.2)
-  ), webkit moz);
-}
+.brandHero--wrapper {color:#FFF;}
 .brandHero--logo {padding-bottom:36px; text-align:center;
-	@media (max-width: $screen-xs-max) {display: flex; align-items:center; padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
+	@media (max-width: $screen-xs-max) {display: flex;  padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
 .brandHero--logo img {width:200px;
 	@media (max-width: $screen-xs-max) {width:110px; margin:72px 0 30px 5%;} }
 .brandHero--description {font-size:$base-font; text-align: center; line-height:$line-height;
@@ -98,7 +95,7 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .brandCollection {text-align: center; padding:$inner-padding;
 	@media (max-width: $screen-xs-max) {padding:0} }
 .brandCollection .col-xs-6, .brandCollection .col-xs-12 {
-	@media (max-width: $screen-xs-max) {margin:30px 0 12px 0;} }
+	@media (max-width: $screen-xs-max) {margin:18px 0 12px 0;} }
 .brandCollection--description {font-size:$base-font; margin-bottom:24px;}
 .brandCollection--range {@extend .brandPretitle; margin-bottom:12px;}
 .brandCollection--title {@extend .brandTitle;
@@ -130,6 +127,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 	&.plume{ padding: 10px 22.6%;
 		@media (max-width: $screen-sm-max) {padding: 10px 130px;}
+		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
+	&.nest{ padding: 10px 21%;
+		@media (max-width: $screen-md-max) {padding: 10px 20%;}
+		@media (max-width: $screen-sm-max) {padding: 10px 110px;}
 		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 	&.woodland{ padding: 10px 24.3%;
 		@media (max-width: $screen-md-max) {padding: 10px 22.5%;}

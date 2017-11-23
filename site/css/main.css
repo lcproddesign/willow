@@ -248,6 +248,90 @@
 #wood-colour25 {
   background-color: #a0345c; }
 
+#nest-colour1 {
+  background-color: #f0efeb; }
+
+#nest-colour2 {
+  background-color: #f0ebe0; }
+
+#nest-colour3 {
+  background-color: #d1d5cd; }
+
+#nest-colour4 {
+  background-color: #bbbdc1; }
+
+#nest-colour5 {
+  background-color: #96979b; }
+
+#nest-colour6 {
+  background-color: #dacdbc; }
+
+#nest-colour7 {
+  background-color: #ad9d90; }
+
+#nest-colour8 {
+  background-color: #8a766b; }
+
+#nest-colour9 {
+  background-color: #fcbe4c; }
+
+#nest-colour10 {
+  background-color: #fddb90; }
+
+#nest-colour11 {
+  background-color: #cad8b4; }
+
+#nest-colour12 {
+  background-color: #a1c780; }
+
+#nest-colour13 {
+  background-color: #3e635b; }
+
+#nest-colour14 {
+  background-color: #8daaa5; }
+
+#nest-colour15 {
+  background-color: #c8d6dd; }
+
+#nest-colour16 {
+  background-color: #a4c8df; }
+
+#nest-colour17 {
+  background-color: #58738b; }
+
+#nest-colour18 {
+  background-color: #304466; }
+
+#nest-colour19 {
+  background-color: #f5d9cc; }
+
+#nest-colour20 {
+  background-color: #dcb5af; }
+
+#nest-colour21 {
+  background-color: #eaaccb; }
+
+#nest-colour22 {
+  background-color: #d46b77; }
+
+#nest-colour23 {
+  background-color: #be4380; }
+
+#nest-colour24 {
+  background-color: #b5273d; }
+
+#nest-colour25 {
+  background-color: #d7cad3; }
+
+#nest-colour26 {
+  background-color: #c3a9b6; }
+
+#nest-colour27 {
+  background-color: #78617a; }
+
+#nest-colour28 {
+  background-color: #7d3f52; }
+
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0); }
@@ -1628,6 +1712,9 @@ a.divLink {
   height: 3px;
   background-color: #5f6062;
   margin: 30px auto 60px auto; }
+  @media (max-width: 767px) {
+    .separator {
+      margin: 24px auto 12px auto; } }
 
 .brandPretitle, .brandHero--scroll, .brandCollection--range, .brandReviews--pretitle, .brandCollab--pretitle {
   font-size: 14px;
@@ -1683,13 +1770,7 @@ a.divLink {
     padding-left: 0; } }
 
 .brandHero--wrapper {
-  background-color: #FFF;
-  color: #5f6062;
-  padding: 24px 12px;
-  border-radius: 2px;
-  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2); }
+  color: #FFF; }
 
 .brandHero--logo {
   padding-bottom: 36px;
@@ -1697,7 +1778,6 @@ a.divLink {
   @media (max-width: 767px) {
     .brandHero--logo {
       display: flex;
-      align-items: center;
       padding-bottom: 0;
       background: url(../img/brandHero.jpg) no-repeat center top;
       background-size: 100% auto; } }
@@ -1853,7 +1933,7 @@ a.divLink {
 
 @media (max-width: 767px) {
   .brandCollection .col-xs-6, .brandCollection .col-xs-12 {
-    margin: 30px 0 12px 0; } }
+    margin: 18px 0 12px 0; } }
 
 .brandCollection--description {
   font-size: 16px;
@@ -1955,6 +2035,18 @@ a.divLink {
         padding: 10px 130px; } }
     @media (max-width: 767px) {
       .brandTile--colours.plume {
+        padding: 0 20px;
+        margin-bottom: 20px; } }
+  .brandTile--colours.nest {
+    padding: 10px 21%; }
+    @media (max-width: 1199px) {
+      .brandTile--colours.nest {
+        padding: 10px 20%; } }
+    @media (max-width: 991px) {
+      .brandTile--colours.nest {
+        padding: 10px 110px; } }
+    @media (max-width: 767px) {
+      .brandTile--colours.nest {
         padding: 0 20px;
         margin-bottom: 20px; } }
   .brandTile--colours.woodland {
