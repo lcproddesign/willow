@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+<?php 
+
+	function mediaURLConv($path){
+    $prodsrc = '{{media url=\'cms/brandpages/willowlark/' . $path . '\'}}';
+    $devsrc = $path;
+
+    //Switch environment
+    return $devsrc;
+	}
+?>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main.css')?>">
 		<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/sticky.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="<?php echo mediaURLConv('js/jquery-3.2.1.min.js')?>"></script>
+		<script src="<?php echo mediaURLConv('js/jquery.waypoints.min.js')?>"></script>
+		<script src="<?php echo mediaURLConv('js/sticky.min.js')?>"></script>
+		<script src="<?php echo mediaURLConv('js/script.js')?>"></script>
 		<title>Willow &amp; Lark</title>
 	</head>
 	<body class="brandWrap">
@@ -16,7 +26,7 @@
 				<div class="row">
 					<div class="brandHero--wrapper col-sm-4 col-xs-12">
 						<div class="brandHero--logo">
-							<img src="img/wandl-logo-lite.svg" />
+							<img src="<?php echo mediaURLConv('img/wandl-logo-lite.svg')?>"/>
 						</div>
 						<p class="brandHero--description hidden-sm hidden-xs">
 							Willow &amp; Lark is a new yarn brand celebrating beautifully British design.
@@ -27,7 +37,7 @@
 				</div>
 			</div>
 			<div class="brandHero--scroll hidden-xs">
-				<div class="bounce"><img src="img/chevron-down.svg" /></div>
+				<div class="bounce"><img src="<?php echo mediaURLConv('img/chevron-down.svg')?>" /></div>
 				<span>Scroll To Explore</span>
 			</div>
 		</div>
@@ -37,7 +47,7 @@
 					<div id="brandNav--wrap" class="col-md-2 hidden-xs hidden-sm">
 						<div class="brandNav">
 							<div class="brandNav--logo">
-								<img src="img/wandl-logo-full.svg" />
+								<img src="<?php echo mediaURLConv('img/wandl-logo-full.svg')?>" />
 							</div>
 							<ul class="brandNav--nav">
 								<li class="selected"><a href="#story">Story</a></li>
@@ -71,7 +81,7 @@
 								<div class="col-xs-12">
 									<a href="https://www.loveknitting.com/willow-lark-ramble" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/collection_yarn_ramble.jpg" />
+											<img src="<?php echo mediaURLConv('img/collection_yarn_ramble.jpg')?>" />
 										</div>
 										<div class="brandTile--hover disableHover">
 											<p class="brandTile--description">
@@ -121,7 +131,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/catherine-cardigan-in-willow-lark-ramble" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/ramble-tile1.jpg"/>
+											<img src="<?php echo mediaURLConv('img/ramble-tile1.jpg')?>"/>
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">The batwing Catherine cardigan makes a dramatic statement with its mix of two cables on the body and a lovely scarf-like neck band featuring a bold, diagonal cable stitch.  For a subtler impact, try knitting Catherine in a single colour.</p>
@@ -138,7 +148,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/edward-jumper-in-willow-lark-ramble" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/ramble-tile2.jpg" />
+											<img src="<?php echo mediaURLConv('img/ramble-tile2.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">The unisex Edward jumper is a modern take on a classic fairisle design, offering both men and women a comfortable, stylish knit that's equally at home around town or on a family jaunt in the country.
@@ -157,7 +167,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/josephine-cowl-in-willow-lark-ramble" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/ramble-tile3.jpg" />
+											<img src="<?php echo mediaURLConv('img/ramble-tile3.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">The Josephine cowl will create an elegant, practical finishing touch to any outfit. By combining slip stitch, cabling and lace stitch, the design creates a whimsical and elegant cowl full of texture and interest.</p>
@@ -174,7 +184,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/victoria-jumper-in-willow-lark-ramble" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/ramble-tile4.jpg" />
+											<img src="<?php echo mediaURLConv('img/ramble-tile4.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">For picnics come rain or shine, the pretty and charming Victoria jumper is perfect slipped in your bag with a flask of tea and umbrella. A turtle neck, designed in a wide comfortable fit, the design features a deep Sandstorm cable producing an interesting undulating pattern of ripples.</p>
@@ -219,7 +229,7 @@
 								<div class="col-xs-12">
 									<a href="https://www.loveknitting.com/willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/collection_yarn_plume.jpg" />
+											<img src="<?php echo mediaURLConv('img/collection_yarn_plume.jpg')?>" />
 										</div>
 										<div class="brandTile--hover disableHover">
 											<p class="brandTile--description">
@@ -265,7 +275,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/ella-jumper-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/plume-tile1.jpg" />
+											<img src="<?php echo mediaURLConv('img/plume-tile1.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">Fashionably cropped, the Ella jumper uses a diamond lace motif to create a modern, lightweight piece that's easy to dress up or down and just as easy to knit.</p>
@@ -282,7 +292,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/felicity-scarf-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/plume-tile2.jpg" />
+											<img src="<?php echo mediaURLConv('img/plume-tile2.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">Ah, the magic of mohair – with just one soft, fluffy ball you can create this intricate, beautiful scarf.  Felicity combines lace triangle edging with trellis lace stitch to create a romantic, textured scarf that is a satisfying challenge to knit.</p>
@@ -299,7 +309,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/jessica-scarf-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/plume-tile3.jpg" />
+											<img src="<?php echo mediaURLConv('img/plume-tile3.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">The Jessica scarf sees a trio of soft delicate shades ripple in closed scallop stitch within the frame of a classic rectangular scarf shape. An intriguing twist on the traditional stripy scarf.</p>
@@ -316,7 +326,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/lucy-cardigan-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/plume-tile4.jpg" />
+											<img src="<?php echo mediaURLConv('img/plume-tile4.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">Lucy combines the lightness of mohair with a lovely fitted shape and standard braid cable to create an understated cardigan that shouts relaxed style.</p>
@@ -359,7 +369,7 @@
 								<div class="col-xs-12">
 									<a href="https://www.loveknitting.com/willow-lark-nest" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/collection_yarn_nest.jpg" />
+											<img src="<?php echo mediaURLConv('img/collection_yarn_nest.jpg')?>" />
 										</div>
 										<div class="brandTile--hover disableHover">
 											<p class="brandTile--description">
@@ -407,7 +417,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/ella-jumper-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/nest-tile1.jpg" />
+											<img src="<?php echo mediaURLConv('img/nest-tile1.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">Wrapping up has never
@@ -427,7 +437,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/felicity-scarf-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/nest-tile2.jpg" />
+											<img src="<?php echo mediaURLConv('img/nest-tile2.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">The Arthur cable jumper is a keeper. Playful and modern, an intricate trellis-like pattern weaves around the body, showing off the design with bold colour blocking. Guaranteed to raise a smile, just like the wearer.</p>
@@ -444,7 +454,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/jessica-scarf-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/nest-tile3.jpg" />
+											<img src="<?php echo mediaURLConv('img/nest-tile3.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">Our signature lark motif knitted in intarsia sets off this super soft jumper to perfection. Whether the wearer likes bright and bold or soft and natural, you can choose your colourway to suit.</p>
@@ -461,7 +471,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/lucy-cardigan-in-willow-lark-plume" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/nest-tile4.jpg" />
+											<img src="<?php echo mediaURLConv('img/nest-tile4.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">With its frilled edging and two stitch cable body pattern, Alice is a wonderfully girly cardigan suitable for all ages. Just what young ladies need for twirling.</p>
@@ -503,7 +513,7 @@
 								<div class="col-xs-12">
 									<a href="https://www.loveknitting.com/willow-lark-woodland" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/collection_yarn_woodland.jpg" />
+											<img src="<?php echo mediaURLConv('img/collection_yarn_woodland.jpg')?>" />
 										</div>
 										<div class="brandTile--hover disableHover">
 											<p class="brandTile--description">
@@ -548,7 +558,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/vanessa-jumper-in-willow-lark-woodland" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/woodland-tile1.jpg" />
+											<img src="<?php echo mediaURLConv('img/woodland-tile1.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">Perfect for woodland walks on route to the pub. The Vanessa jumper is comfy and warm, featuring beautiful ribbed neckline and lovely cable detailing on the seam.
@@ -566,7 +576,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/georgina-jumper-in-willow-lark-woodland" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/woodland-tile2.jpg" />
+											<img src="<?php echo mediaURLConv('img/woodland-tile2.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">The Georgina jumper is the knitting equivalent of an invigorating walk on a crisp winter day, guaranteed to clear your head and put a smile on your face. Using seven colours, the intricate pattern creates a standard set in sleeve design with a Fair Isle top section.</p>
@@ -583,7 +593,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/samantha-hat-in-willow-lark-woodland" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/woodland-tile3.jpg" />
+											<img src="<?php echo mediaURLConv('img/woodland-tile3.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">The Samantha hat uses a striking arrow pattern to create a fresh, two colour fairisle piece. This is the perfect small project to hone your skill and practise your colourwork.</p>
@@ -600,7 +610,7 @@
 								<div class="col-xs-6">
 									<a href="https://www.loveknitting.com/emily-jumper-in-willow-lark-woodland" class="brandTile">
 										<div class="imageContainer">
-											<img src="img/woodland-tile4.jpg" />
+											<img src="<?php echo mediaURLConv('img/woodland-tile4.jpg')?>" />
 										</div>
 										<div class="brandTile--hover">
 											<p class="brandTile--description">From quirky clashes to toning classics, express yourself in the colours you love with the Emily jumper. Its straightforward box fit shaping and all over stocking stitch make it easy to knit and easy to wear.</p>
