@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="19px" viewBox="0 0 34 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>chevron-left</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop---Scrolled-down" transform="translate(-703.000000, -495.000000)" fill="#FFFFFF">
-            <g id="Group-2" transform="translate(570.000000, 488.000000)">
-                <g id="chevron" transform="translate(132.000000, 0.000000)">
-                    <g id="chevron-left" transform="translate(18.000000, 16.000000) rotate(180.000000) translate(-18.000000, -16.000000) translate(0.000000, 6.000000)">
-                        <path d="M25.7333333,26 C26.1521233,26.0041325 26.5552171,25.8347002 26.8533333,25.5292308 C27.1415532,25.2613155 27.3062746,24.8786223 27.3062746,24.4769231 C27.3062746,24.0752239 27.1415532,23.6925307 26.8533333,23.4246154 L12.3733333,9.38461538 L26.9066667,-4.71076923 C27.1948866,-4.9786845 27.3596079,-5.36137773 27.3596079,-5.76307692 C27.3596079,-6.16477612 27.1948866,-6.54746935 26.9066667,-6.81538462 C26.2700904,-7.43353915 25.2741919,-7.40891529 24.6666667,-6.76 L9.09333333,8.44307692 C8.80511343,8.71099219 8.64039207,9.09368542 8.64039207,9.49538462 C8.64039207,9.89708381 8.80511343,10.279777 9.09333333,10.5476923 L24.6666667,25.6123077 C24.9649734,25.871975 25.3442027,26.0098102 25.7333333,26 Z" id="Shape" fill-rule="nonzero" transform="translate(18.000000, 9.368586) rotate(90.000000) translate(-18.000000, -9.368586) "></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.14 11.32"><title>chevron-down</title><g id="Page-1"><g id="Desktop---Scrolled-down"><g id="Group-2"><g id="chevron"><g id="chevron-left"><g id="Shape"><path d="M17,11.82a1.5,1.5,0,0,1-.76-.21L2.16,3.29A1.5,1.5,0,0,1,3.68.71L17,8.57,30.29.74a1.5,1.5,0,0,1,1.53,2.58l-14,8.29A1.5,1.5,0,0,1,17,11.82Z" transform="translate(-1.42 -0.5)" fill="#fff"/></g></g></g></g></g></g></svg>

@@ -40,13 +40,13 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 	@media (max-width: $screen-xs-max) {font-size:16px; margin: 18px 0 12px;} }
 .brandWrap {font-family: 'Sorts Mill Goudy', serif;}
 .brandWrap a {text-decoration: none;}
-.brandHero {display: flex; align-items:center; max-height:720px; height: 90vh; justify-content:center; background: url(../img/brandHero.jpg) no-repeat center center; background-size: 100% auto; position:relative;
+.brandHero {display: flex; align-items:center; max-height:600px; height: 90vh; justify-content:center; background: url(../img/brandHero.jpg) no-repeat center center; background-size: 100% auto; position:relative;
 	@media (max-width: $screen-sm-max) {height: 40vh;}
 	@media (max-width: $screen-xs-max) { display: block; max-height:inherit; height: auto; background: none;} }
 .brandHero [class*='col-'] {
 	@media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
 .brandHero--wrapper {color:#FFF;}
-.brandHero--logo {padding-bottom:36px; text-align:center;
+.brandHero--logo {padding-bottom:18px; text-align:center;
 	@media (max-width: $screen-xs-max) {display: flex;  padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
 .brandHero--logo img {width:200px;
 	@media (max-width: $screen-xs-max) {width:110px; margin:72px 0 30px 5%;} }
@@ -105,12 +105,12 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .brandTile:hover:before { opacity: 1; visibility: visible;}
 .brandTile:hover .brandTile--hover {visibility: visible; opacity: 1; transition:all .2s ease-in-out;
 background: rgba(255,255,255,0);
-background: -moz-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(10%, rgba(65,72,70,0.2)), color-stop(100%, rgba(65,72,70,0.8)));
-background: -webkit-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
-background: -o-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
-background: -ms-linear-gradient(top, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
-background: linear-gradient(to bottom, rgba(65,72,70,0.2) 10%, rgba(65,72,70,0.8) 100%);
+background: -moz-linear-gradient(top, rgba(65,72,70,0.8) 10%, rgba(65,72,70,0.3) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(10%, rgba(65,72,70,0.8)), color-stop(100%, rgba(65,72,70,0.3)));
+background: -webkit-linear-gradient(top, rgba(65,72,70,0.8) 10%, rgba(65,72,70,0.3) 100%);
+background: -o-linear-gradient(top, rgba(65,72,70,0.8) 10%, rgba(65,72,70,0.3) 100%);
+background: -ms-linear-gradient(top, rgba(65,72,70,0.8) 10%, rgba(65,72,70,0.3) 100%);
+background: linear-gradient(to bottom, rgba(65,72,70,0.8) 10%, rgba(65,72,70,0.3) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#414846', GradientType=0 );}
 .brandTile--hover {width:100%; height:100%; padding:30px; top:0; visibility: hidden; opacity: 0; position: absolute; transition:all .2s ease-in-out;
 	@media (max-width: $screen-xs-max) {display: none;} }
@@ -118,6 +118,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandTile--actions{position: absolute; bottom: 24px; left:0; right:0;}
 .brandTile--name {@extend .brandSubtitle;}
 .brandFullColTile--name {@extend .brandSubtitle; margin: 20px 0 10px;}
+.brandFullColTile--name .blend{display:block; color:$gry3;}
 .brandTile--actions .btn:first-child {margin-right:6px;}
 .brandTile--actions .btn:last-child {margin-left:6px;}
 .brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 10px 150px; margin-bottom:40px;
