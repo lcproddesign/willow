@@ -7,13 +7,20 @@ $(document).ready(function(){
 			handler: function(direction) {
 			$('.brandNav').toggleClass('unstuck')
 			}, offset: $('.brandNav').height() + 110 + 'px'
-			})
+	})
 
-					// $('.some-element').waypoint(function(direction) {
-			//   // do things
-			// }, {
-			//   context: '.scrollable-element'
-			// })
+	// Change selected state of nav and hash based on scrolling position
+	$('.section').waypoint(function(event){
+  		 	$('.brandNav--nav li').removeClass('selected');
+  		 	var currSection = this.element.id ;
+    		$('.brandNav--nav a[href$="#'+currSection+'"]').closest('li').addClass('selected');
+  	 		
+  	 		var hash = currSection;
+  	 		 if (this.hash !== "") {
+  	 		 	window.location.hash = hash;
+  	 		 }//end if
+ 			 });
+
 
   // Add smooth scrolling to all links
   $('a').on('click', function(event) {
