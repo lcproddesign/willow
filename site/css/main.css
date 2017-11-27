@@ -1787,7 +1787,7 @@ a.divLink {
   @media (max-width: 767px) {
     .brandHero--logo img {
       width: 110px;
-      margin: 72px 0 30px 5%; } }
+      margin: 36px 0 36px 5%; } }
 
 .brandHero--description {
   font-size: 16px;
@@ -1855,7 +1855,7 @@ a.divLink {
 .brandNav--nav li {
   padding: 10px 24px 8px 0;
   font-size: 18px;
-  margin-right: -4px; }
+  margin-right: -2px; }
 
 .brandNav--nav a {
   color: #8b8d92; }
