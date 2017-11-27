@@ -1978,6 +1978,9 @@ a.divLink {
   background: linear-gradient(to bottom, rgba(65, 72, 70, 0.8) 10%, rgba(65, 72, 70, 0.3) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#414846', GradientType=0 ); }
 
+.brandTile:hover .brandTile--hover.disableHover {
+  background: none; }
+
 .brandTile--hover {
   width: 100%;
   height: 100%;
