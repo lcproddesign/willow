@@ -1,19 +1,19 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
 	var sticky = new Waypoint.Sticky({
-			element: $('.brandNav')[0]
+			element: jQuery('.brandNav')[0]
 			})
-			var waypoints = $('#way1').waypoint({
+			var waypoints = jQuery('#way1').waypoint({
 			handler: function(direction) {
-			$('.brandNav').toggleClass('unstuck')
-			}, offset: $('.brandNav').height() + 110 + 'px'
+			jQuery('.brandNav').toggleClass('unstuck')
+			}, offset: jQuery('.brandNav').height() + 110 + 'px'
 	})
 
 	// Change selected state of nav and hash based on scrolling position
-	$('.section').waypoint(function(event){
-  		 	$('.brandNav--nav li').removeClass('selected');
+	jQuery('.section').waypoint(function(event){
+  		 	jQuery('.brandNav--nav li').removeClass('selected');
   		 	var currSection = this.element.id ;
-    		$('.brandNav--nav a[href$="#'+currSection+'"]').closest('li').addClass('selected');
+    		jQuery('.brandNav--nav a[href$="#'+currSection+'"]').closest('li').addClass('selected');
   	 		
   	 		var hash = currSection;
   	 		 if (this.hash !== "") {
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 
   // Add smooth scrolling to all links
-  $('a').on('click', function(event) {
+  jQuery('a').on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -31,16 +31,16 @@ $(document).ready(function(){
       event.preventDefault();
 
        	//Change selected state of current menu
-       	$('.brandNav--nav li').removeClass('selected');
-    	$(this).closest('li').addClass('selected');
+       	jQuery('.brandNav--nav li').removeClass('selected');
+    	jQuery(this).closest('li').addClass('selected');
 
       // Store hash
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
+      jQuery('html, body').animate({
+        scrollTop: jQuery(hash).offset().top
       }, 800, function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -50,10 +50,10 @@ $(document).ready(function(){
 
 
   //Image tile hover effects
- $('.brandTile').hover(function() {
- 		$(this).find('img').addClass('enlarge');
+ jQuery('.brandTile').hover(function() {
+ 		jQuery(this).find('img').addClass('enlarge');
  		}, function(){
- 		$(this).find('img').removeClass('enlarge');
+ 		jQuery(this).find('img').removeClass('enlarge');
  		});
 
 });
