@@ -2591,6 +2591,9 @@ a.divLink {
 .brandSubtitle, .brandTile--name, .brandFullColTile--name {
   font-size: 18px;
   margin: 20px 0 40px; }
+  @media (max-width: 991px) {
+    .brandSubtitle, .brandTile--name, .brandFullColTile--name {
+      margin: 18px 0 12px; } }
   @media (max-width: 767px) {
     .brandSubtitle, .brandTile--name, .brandFullColTile--name {
       font-size: 16px;
@@ -2668,7 +2671,7 @@ a.divLink {
   left: 50%;
   width: 30px;
   height: 30px;
-  margin-left: -30px;
+  margin-left: -15px;
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
   -o-animation: bounce 2s infinite;
@@ -2733,8 +2736,7 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: inherit;
-  bottom: 80px; }
+  top: 6770px; }
 
 .imageContainer {
   position: relative;
@@ -2776,7 +2778,7 @@ a.divLink {
   background-size: 80% auto; }
   @media (max-width: 991px) {
     .brandCollections {
-      padding-top: 50px; } }
+      padding-top: 30px; } }
   @media (max-width: 767px) {
     .brandCollections {
       padding-top: 6px; } }
@@ -2876,6 +2878,9 @@ a.divLink {
 .brandTile--actions .btn:last-child {
   margin-left: 6px; }
 
+.brandTile--cta {
+  margin-bottom: 24px; }
+
 .brandTile--colours {
   display: flex;
   flex-direction: row;
@@ -2883,6 +2888,9 @@ a.divLink {
   justify-content: center;
   padding: 10px 150px;
   margin-bottom: 40px; }
+  @media (max-width: 991px) {
+    .brandTile--colours {
+      margin-bottom: 18px; } }
   .brandTile--colours.ramble {
     padding: 10px 18.7%; }
     @media (max-width: 991px) {
@@ -3145,6 +3153,9 @@ a.divLink {
 .brandSubtitle, .brandTile--name, .brandFullColTile--name {
   font-size: 18px;
   margin: 20px 0 40px; }
+  @media (max-width: 991px) {
+    .brandSubtitle, .brandTile--name, .brandFullColTile--name {
+      margin: 18px 0 12px; } }
   @media (max-width: 767px) {
     .brandSubtitle, .brandTile--name, .brandFullColTile--name {
       font-size: 16px;
@@ -3222,7 +3233,7 @@ a.divLink {
   left: 50%;
   width: 30px;
   height: 30px;
-  margin-left: -30px;
+  margin-left: -15px;
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
   -o-animation: bounce 2s infinite;
@@ -3287,8 +3298,7 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: inherit;
-  bottom: 80px; }
+  top: 6770px; }
 
 .imageContainer {
   position: relative;
@@ -3330,7 +3340,7 @@ a.divLink {
   background-size: 80% auto; }
   @media (max-width: 991px) {
     .brandCollections {
-      padding-top: 50px; } }
+      padding-top: 30px; } }
   @media (max-width: 767px) {
     .brandCollections {
       padding-top: 6px; } }
@@ -3430,6 +3440,9 @@ a.divLink {
 .brandTile--actions .btn:last-child {
   margin-left: 6px; }
 
+.brandTile--cta {
+  margin-bottom: 24px; }
+
 .brandTile--colours {
   display: flex;
   flex-direction: row;
@@ -3437,6 +3450,9 @@ a.divLink {
   justify-content: center;
   padding: 10px 150px;
   margin-bottom: 40px; }
+  @media (max-width: 991px) {
+    .brandTile--colours {
+      margin-bottom: 18px; } }
   .brandTile--colours.ramble {
     padding: 10px 18.7%; }
     @media (max-width: 991px) {

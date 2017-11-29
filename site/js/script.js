@@ -5,8 +5,10 @@ jQuery(document).ready(function(){
 			})
 			var waypoints = jQuery('#way1').waypoint({
 			handler: function(direction) {
-			jQuery('.brandNav').toggleClass('unstuck')
-			}, offset: jQuery('.brandNav').height() + 110 + 'px'
+			jQuery('.brandNav').toggleClass('unstuck');
+
+			}, offset:'450px'
+
 	})
 
 	// Change selected state of nav and hash based on scrolling position
