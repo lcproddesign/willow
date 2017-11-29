@@ -2,19 +2,37 @@
 <html>
 <?php 
 
+	$mode = 'dev';
+	
 	function mediaURLConv($path){
-    $prodsrc = '{{media url=\'cms/brandpages/willowlark/' . $path . '\'}}';
-    $devsrc = $path;
+		global $mode;
 
-    //Switch environment
-    return $devsrc;
+		if ($mode == 'dev'){
+			$src = $path;
+		}
+		else if ($mode == 'prod'){
+			$src = '{{media url=\'cms/brandpages/willowlark/' . $path . '\'}}';
+		}
+		else if ($mode != 'dev' && $mode != 'prod'){
+			$src = 'something/went/wrong';
+		}
+
+		//Switch environment
+		return $src;
 	}
 ?>
 	<head>
-		<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main.css')?>">
+		
 		<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<script src="<?php echo mediaURLConv('js/jquery-3.2.1.min.js')?>"></script>
+
+		<?php if($mode == 'dev'){?>
+			<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main_dev.min.css')?>">
+			<script src="<?php echo mediaURLConv('js/jquery-3.2.1.min.js')?>"></script>
+		<?php } else { ?>
+			<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main.min.css')?>">
+		<?php } ?>
+
 		<script src="<?php echo mediaURLConv('js/jquery.waypoints.min.js')?>"></script>
 		<script src="<?php echo mediaURLConv('js/sticky.min.js')?>"></script>
 		<script src="<?php echo mediaURLConv('js/script.js')?>"></script>

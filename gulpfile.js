@@ -4,6 +4,10 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 gulp.task('minify-css', () => {
+	gulp.src('site/css/main_dev.css')
+		.pipe(cleanCSS())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('./site/css/')),
 	gulp.src('site/css/main.css')
 		.pipe(cleanCSS())
 		.pipe(rename({suffix: '.min'}))
@@ -19,5 +23,5 @@ gulp.task('styles', function() {
 //Watch task
 gulp.task('default',function() {
     gulp.watch('site/scss/**/*.scss',['styles']);
-    gulp.watch('site/css/main.css',['minify-css']);
+    gulp.watch('site/css/main*.css',['minify-css']);
 });
