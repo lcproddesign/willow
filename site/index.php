@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
 <?php 
 
-	$mode = 'dev';
+	$mode = 'prod';
 	
 	function mediaURLConv($path){
 		global $mode;
@@ -21,24 +19,32 @@
 		return $src;
 	}
 ?>
+
+<?php if($mode == 'dev'){?>
+<!DOCTYPE html>
+<html>
 	<head>
-		
-		<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<?php } ?>		
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-		<?php if($mode == 'dev'){?>
-			<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main_dev.min.css')?>">
-			<script src="<?php echo mediaURLConv('js/jquery-3.2.1.min.js')?>"></script>
-		<?php } else { ?>
-			<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main.min.css')?>">
-		<?php } ?>
+	<?php if($mode == 'dev'){?>
+		<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main_dev.min.css')?>">
+		<script src="<?php echo mediaURLConv('js/jquery-3.2.1.min.js')?>"></script>
+	<?php } else { ?>
+		<link rel="stylesheet" type="text/css" href="<?php echo mediaURLConv('css/main.min.css')?>">
+	<?php } ?>
 
-		<script src="<?php echo mediaURLConv('js/jquery.waypoints.min.js')?>"></script>
-		<script src="<?php echo mediaURLConv('js/sticky.min.js')?>"></script>
-		<script src="<?php echo mediaURLConv('js/script.js')?>"></script>
+	<script src="<?php echo mediaURLConv('js/jquery.waypoints.min.js')?>"></script>
+	<script src="<?php echo mediaURLConv('js/sticky.min.js')?>"></script>
+	<script src="<?php echo mediaURLConv('js/script.js')?>"></script>
 		<title>Willow &amp; Lark</title>
+<?php if($mode == 'dev'){?>
 	</head>
 	<body class="brandWrap">
+<?php } else if ($mode=='prod'){ ?>
+	<div class="brandwrap">
+<?php } ?>
 		<div class="brandHero section" id="story">
 			<div class="container">
 				<div class="row">
@@ -648,5 +654,9 @@
 				</div>
 			</div>
 		</div>
+<?php if($mode == 'dev'){?>
 	</body>
 </html>
+<?php } else if($mode == 'prod') {?>
+	</div>
+<?php } ?>
