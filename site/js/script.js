@@ -19,7 +19,12 @@ jQuery(document).ready(function(){
   	 		
   	 		var hash = currSection;
   	 		 if (this.hash !== "") {
-  	 		 	window.location.hash = hash;
+  	 		 	if(history.pushState) {
+                  history.pushState(null, null, '#' + hash);
+              }
+              else {
+                  location.hash = hash;
+              }
   	 		 }//end if
  			 });
 
@@ -45,7 +50,12 @@ jQuery(document).ready(function(){
         scrollTop: jQuery(hash).offset().top
       }, 800, function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+          if(history.pushState) {
+                  history.pushState(null, null, hash);
+              }
+              else {
+                  location.hash =  hash;
+              }
       });
     } // End if
   });

@@ -41,7 +41,7 @@
 		<title>Willow &amp; Lark</title>
 <?php if($mode == 'dev'){?>
 	</head>
-	<body class="brandWrap">
+	<body class="brandwrap">
 <?php } else if ($mode=='prod'){ ?>
 	<div class="brandwrap">
 <?php } ?>
@@ -95,7 +95,7 @@
 								<div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
 									<div class="brandCollection--range">A really splendid superwash wool</div>
 									<div class="brandCollection--title">Ramble</div>
-									<p class="brandCollection--description hidden-xs">
+									<p class="brandCollection--description hidden-sm hidden-xs">
 										You can't beat a really splendid wool to keep you warm on crisp autumn walks in the countryside. We've tested and retested Ramble to find the perfect blend of twist and weight to create a hard-wearing fibre with great stitch definition, in a rainbow of classic, weather-beaten colours.<br/><br/>
 										Over to you for final testing - blustery days, wellies and cup of tea at the ready.
 									</p>
@@ -110,7 +110,7 @@
 										<div class="brandTile--hover disableHover">
 											<p class="brandTile--description">
 											</p>
-											<div class="brandTile--actions">
+											<div class="brandTile--actions hidden-sm hidden-xs">
 												<div class="btn btn-primary">Shop Ramble yarn</div>
 											</div>
 										</div>
@@ -148,7 +148,7 @@
 										<div class="yarnColour" id="ram-colour29"><a class="divLink" href="https://www.loveknitting.com/willow-lark-ramble?sku=10139493"></a></div>
 										<div class="yarnColour" id="ram-colour30"><a class="divLink" href="https://www.loveknitting.com/willow-lark-ramble?sku=10139491"></a></div>
 									</div>
-									<a href="https://www.loveknitting.com/willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Shop Ramble yarn
 									</a>
 								</div>
@@ -165,7 +165,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Catherine Cardigan</div>
-									<a href="https://www.loveknitting.com/catherine-cardigan-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/catherine-cardigan-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -184,7 +184,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Edward Jumper</div>
-									<a href="https://www.loveknitting.com/edward-jumper-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/edward-jumper-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -201,7 +201,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Josephine Cowl</div>
-									<a href="https://www.loveknitting.com/josephine-cowl-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/josephine-cowl-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -218,7 +218,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Victoria Jumper</div>
-									<a href="https://www.loveknitting.com/victoria-jumper-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/victoria-jumper-in-willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -292,7 +292,7 @@
 										<div class="yarnColour" id="plu-colour25"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
 										<div class="yarnColour" id="plu-colour26"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10143074"></a></div>
 									</div>
-									<a href="https://www.loveknitting.com/willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Shop Plume yarn
 									</a>
 								</div>
@@ -309,7 +309,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Ella Jumper</div>
-									<a href="https://www.loveknitting.com/ella-jumper-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/ella-jumper-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -326,7 +326,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Felicity Scarf</div>
-									<a href="https://www.loveknitting.com/felicity-scarf-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/felicity-scarf-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -343,7 +343,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Jessica Scarf</div>
-									<a href="https://www.loveknitting.com/jessica-scarf-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/jessica-scarf-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -360,7 +360,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Lucy Cardigan</div>
-									<a href="https://www.loveknitting.com/lucy-cardigan-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/lucy-cardigan-in-willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -434,7 +434,7 @@
 										<div class="yarnColour" id="nest-colour27"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
 										<div class="yarnColour" id="nest-colour28"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
 									</div>
-									<a href="https://www.loveknitting.com/willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Shop Nest yarn
 									</a>
 								</div>
@@ -454,7 +454,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Flora Cardigan</div>
-									<a href="https://www.loveknitting.com/flora-cardigan-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/flora-cardigan-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -471,7 +471,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Arthur Jumper</div>
-									<a href="https://www.loveknitting.com/arthur-jumper-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/arthur-jumper-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -488,7 +488,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Little Lark Jumper</div>
-									<a href="https://www.loveknitting.com/little-lark-jumper-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/little-lark-jumper-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -505,7 +505,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Alice Cardigan</div>
-									<a href="https://www.loveknitting.com/alice-cardigan-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/alice-cardigan-in-willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -575,7 +575,7 @@
 										<div class="yarnColour" id="wood-colour24"><a class="divLink" href="https://www.loveknitting.com/willow-lark-woodland?sku=10140983"></a></div>
 										<div class="yarnColour" id="wood-colour25"><a class="divLink" href="https://www.loveknitting.com/willow-lark-woodland?sku=10140984"></a></div>
 									</div>
-									<a href="https://www.loveknitting.com/willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Shop Woodland yarn
 									</a>
 								</div>
@@ -593,7 +593,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Vanessa Jumper</div>
-									<a href="https://www.loveknitting.com/vanessa-jumper-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/vanessa-jumper-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -610,7 +610,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Georgina Jumper</div>
-									<a href="https://www.loveknitting.com/georgina-jumper-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/georgina-jumper-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -627,7 +627,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Samantha Hat</div>
-									<a href="https://www.loveknitting.com/samantha-hat-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/samantha-hat-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>
@@ -644,7 +644,7 @@
 										</div>
 									</a>
 									<div class="brandTile--name">Emily Jumper</div>
-									<a href="https://www.loveknitting.com/emily-jumper-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm">
+									<a href="https://www.loveknitting.com/emily-jumper-in-willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Get pattern
 									</a>
 								</div>

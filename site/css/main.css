@@ -2517,13 +2517,61 @@ input[type="button"].btn-block {
   .hidden-print {
     display: none !important; } }
 
-.brandWrap * {
+/*LC specific overrides*/
+* {
+  -webkit-box-sizing: unset;
+  -moz-box-sizing: unset;
+  box-sizing: unset; }
+
+#main {
+  margin: 0;
+  padding: 0;
+  max-width: 100%; }
+
+#main .brandwrap, #main .brandwrap p, .lc-container p, .overlay-content p {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+.cms-page-view .wrapper {
+  padding: 0px; }
+
+.cms-page-view #main p {
+  margin-bottom: inherit;
+  padding-bottom: inherit; }
+
+.cms-page-view #main p.brandCollection--description {
+  margin-bottom: 24px; }
+
+p.brandTile--description, p.brandHero--description {
+  color: #FFF; }
+
+#main .container {
+  width: 1018px; }
+  @media (max-width: 991px) {
+    #main .container {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    #main .container {
+      width: 100%; } }
+
+.content {
+  margin: 0; }
+
+#footer {
+  margin: 0; }
+
+.breadcrumbs-nav {
+  margin-bottom: 0; }
+
+/*Style starts*/
+.brandwrap * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.brandWrap *:before,
-.brandWrap *:after {
+.brandwrap *:before,
+.brandwrap *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -2533,7 +2581,7 @@ input[type="button"].btn-block {
   min-width: 40%;
   border-radius: 2px;
   height: 40px;
-  line-height: 26px; }
+  line-height: 24px; }
 
 .btn-default {
   border: 1px solid #d4d4d4;
@@ -2599,10 +2647,11 @@ a.divLink {
       font-size: 16px;
       margin: 18px 0 12px; } }
 
-.brandWrap {
-  font-family: 'Sorts Mill Goudy', serif; }
+.brandwrap {
+  font-family: 'Sorts Mill Goudy', serif;
+  padding-bottom: 60px; }
 
-.brandWrap a {
+.brandwrap a {
   text-decoration: none; }
 
 .brandHero {
@@ -2652,7 +2701,9 @@ a.divLink {
 .brandHero--description {
   font-size: 16px;
   text-align: center;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #FFF;
+  padding: 16px 0; }
   @media (max-width: 767px) {
     .brandHero--description {
       color: inherit;
@@ -2718,7 +2769,9 @@ a.divLink {
   margin-right: -2px; }
 
 .brandNav--nav a {
-  color: #8b8d92; }
+  color: #8b8d92;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 18px; }
 
 .brandNav--nav li.selected {
   border-right: 3px solid #333; }
@@ -2849,6 +2902,9 @@ a.divLink {
   opacity: 0;
   position: absolute;
   transition: all .2s ease-in-out; }
+  @media (max-width: 991px) {
+    .brandTile--hover {
+      display: none; } }
   @media (max-width: 767px) {
     .brandTile--hover {
       display: none; } }
@@ -3079,13 +3135,61 @@ a.divLink {
   width: 100%;
   height: 100%; }
 
-.brandWrap * {
+/*LC specific overrides*/
+* {
+  -webkit-box-sizing: unset;
+  -moz-box-sizing: unset;
+  box-sizing: unset; }
+
+#main {
+  margin: 0;
+  padding: 0;
+  max-width: 100%; }
+
+#main .brandwrap, #main .brandwrap p, .lc-container p, .overlay-content p {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+.cms-page-view .wrapper {
+  padding: 0px; }
+
+.cms-page-view #main p {
+  margin-bottom: inherit;
+  padding-bottom: inherit; }
+
+.cms-page-view #main p.brandCollection--description {
+  margin-bottom: 24px; }
+
+p.brandTile--description, p.brandHero--description {
+  color: #FFF; }
+
+#main .container {
+  width: 1018px; }
+  @media (max-width: 991px) {
+    #main .container {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    #main .container {
+      width: 100%; } }
+
+.content {
+  margin: 0; }
+
+#footer {
+  margin: 0; }
+
+.breadcrumbs-nav {
+  margin-bottom: 0; }
+
+/*Style starts*/
+.brandwrap * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.brandWrap *:before,
-.brandWrap *:after {
+.brandwrap *:before,
+.brandwrap *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -3095,7 +3199,7 @@ a.divLink {
   min-width: 40%;
   border-radius: 2px;
   height: 40px;
-  line-height: 26px; }
+  line-height: 24px; }
 
 .btn-default {
   border: 1px solid #d4d4d4;
@@ -3161,10 +3265,11 @@ a.divLink {
       font-size: 16px;
       margin: 18px 0 12px; } }
 
-.brandWrap {
-  font-family: 'Sorts Mill Goudy', serif; }
+.brandwrap {
+  font-family: 'Sorts Mill Goudy', serif;
+  padding-bottom: 60px; }
 
-.brandWrap a {
+.brandwrap a {
   text-decoration: none; }
 
 .brandHero {
@@ -3214,7 +3319,9 @@ a.divLink {
 .brandHero--description {
   font-size: 16px;
   text-align: center;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #FFF;
+  padding: 16px 0; }
   @media (max-width: 767px) {
     .brandHero--description {
       color: inherit;
@@ -3280,7 +3387,9 @@ a.divLink {
   margin-right: -2px; }
 
 .brandNav--nav a {
-  color: #8b8d92; }
+  color: #8b8d92;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 18px; }
 
 .brandNav--nav li.selected {
   border-right: 3px solid #333; }
@@ -3411,6 +3520,9 @@ a.divLink {
   opacity: 0;
   position: absolute;
   transition: all .2s ease-in-out; }
+  @media (max-width: 991px) {
+    .brandTile--hover {
+      display: none; } }
   @media (max-width: 767px) {
     .brandTile--hover {
       display: none; } }
