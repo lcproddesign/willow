@@ -2518,11 +2518,6 @@ input[type="button"].btn-block {
     display: none !important; } }
 
 /*LC specific overrides*/
-* {
-  -webkit-box-sizing: unset;
-  -moz-box-sizing: unset;
-  box-sizing: unset; }
-
 #main {
   margin: 0;
   padding: 0;
@@ -2703,7 +2698,8 @@ a.divLink {
   text-align: center;
   line-height: 1.5;
   color: #FFF;
-  padding: 16px 0; }
+  padding: 16px 0;
+  font-weight: bold !important; }
   @media (max-width: 767px) {
     .brandHero--description {
       color: inherit;
@@ -2714,7 +2710,8 @@ a.divLink {
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: 30px; }
+  bottom: 30px;
+  font-weight: bold !important; }
 
 .brandHero--scroll .bounce {
   position: absolute;
@@ -3136,11 +3133,6 @@ a.divLink {
   height: 100%; }
 
 /*LC specific overrides*/
-* {
-  -webkit-box-sizing: unset;
-  -moz-box-sizing: unset;
-  box-sizing: unset; }
-
 #main {
   margin: 0;
   padding: 0;
@@ -3321,7 +3313,8 @@ a.divLink {
   text-align: center;
   line-height: 1.5;
   color: #FFF;
-  padding: 16px 0; }
+  padding: 16px 0;
+  font-weight: bold !important; }
   @media (max-width: 767px) {
     .brandHero--description {
       color: inherit;
@@ -3332,7 +3325,8 @@ a.divLink {
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: 30px; }
+  bottom: 30px;
+  font-weight: bold !important; }
 
 .brandHero--scroll .bounce {
   position: absolute;

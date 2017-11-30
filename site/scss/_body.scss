@@ -1,8 +1,6 @@
 
 /*LC specific overrides*/
-*{
-	@include box-sizing(unset);
-}
+
 #main{margin: 0; padding:0; max-width: 100%;}
 #main .brandwrap, #main .brandwrap p, .lc-container p, .overlay-content p{font-family:'Sorts Mill Goudy', serif; font-size:16px; line-height:1.5;}
 .cms-page-view .wrapper{padding:0px;}
@@ -24,8 +22,6 @@ p.brandTile--description, p.brandHero--description{color:#FFF;}
 
 // Override breadcrumb strange margin offset
 .breadcrumbs-nav{margin-bottom:0}
-
-
 
 /*Style starts*/
 
@@ -78,9 +74,9 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 	@media (max-width: $screen-xs-max) {display: flex;  padding-bottom:0; background: url(../img/brandHero.jpg) no-repeat center top; background-size: 100% auto;} }
 .brandHero--logo img {width:200px;
 	@media (max-width: $screen-xs-max) {width:110px; margin:36px 0 36px 5%;} }
-.brandHero--description {font-size:$base-font; text-align: center; line-height:$line-height; color:#FFF; padding:16px 0;
+.brandHero--description {font-size:$base-font; text-align: center; line-height:$line-height; color:#FFF; padding:16px 0; font-weight:bold !important;
 	@media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
-.brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px;}
+.brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px; font-weight:bold !important;}
 .brandHero--scroll .bounce {position: absolute;bottom: 30px;left: 50% ;width:30px;height: 30px;margin-left:-15px;
  	@include prefix(( animation: bounce 2s infinite), webkit moz o)}
 .brandNav {padding-top:30px; width:145px;}
