@@ -1085,7 +1085,7 @@ p.brandTile--description, p.brandHero--description {
   width: 1018px; }
   @media (max-width: 991px) {
     #main .container {
-      width: 100%; } }
+      width: 744px; } }
   @media (max-width: 767px) {
     #main .container {
       width: 100%; } }
@@ -1116,7 +1116,8 @@ p.brandTile--description, p.brandHero--description {
   min-width: 40%;
   border-radius: 2px;
   height: 40px;
-  line-height: 24px; }
+  line-height: 22px;
+  font-size: 14px; }
 
 .btn-default {
   border: 1px solid #d4d4d4;
@@ -1195,17 +1196,17 @@ a.divLink {
   max-height: 600px;
   height: 90vh;
   justify-content: center;
-  background: url(../img/brandHero.jpg) no-repeat center center;
+  background: url(../img/brandHero.jpg) #cfc7b1 no-repeat center center;
   background-size: 100% auto;
   position: relative; }
   @media (max-width: 991px) {
     .brandHero {
-      height: 40vh; } }
+      height: 60vh; } }
   @media (max-width: 767px) {
     .brandHero {
+      height: auto;
       display: block;
       max-height: inherit;
-      height: auto;
       background: none; } }
 
 @media (max-width: 767px) {
@@ -1252,6 +1253,10 @@ a.divLink {
   position: absolute;
   bottom: 30px;
   font-weight: bold !important; }
+
+.brandHero--scroll a {
+  color: #fff;
+  font-family: 'Sorts Mill Goudy', serif; }
 
 .brandHero--scroll .bounce {
   position: absolute;
@@ -1700,7 +1705,7 @@ p.brandTile--description, p.brandHero--description {
   width: 1018px; }
   @media (max-width: 991px) {
     #main .container {
-      width: 100%; } }
+      width: 744px; } }
   @media (max-width: 767px) {
     #main .container {
       width: 100%; } }
@@ -1731,7 +1736,8 @@ p.brandTile--description, p.brandHero--description {
   min-width: 40%;
   border-radius: 2px;
   height: 40px;
-  line-height: 24px; }
+  line-height: 22px;
+  font-size: 14px; }
 
 .btn-default {
   border: 1px solid #d4d4d4;
@@ -1810,17 +1816,17 @@ a.divLink {
   max-height: 600px;
   height: 90vh;
   justify-content: center;
-  background: url(../img/brandHero.jpg) no-repeat center center;
+  background: url(../img/brandHero.jpg) #cfc7b1 no-repeat center center;
   background-size: 100% auto;
   position: relative; }
   @media (max-width: 991px) {
     .brandHero {
-      height: 40vh; } }
+      height: 60vh; } }
   @media (max-width: 767px) {
     .brandHero {
+      height: auto;
       display: block;
       max-height: inherit;
-      height: auto;
       background: none; } }
 
 @media (max-width: 767px) {
@@ -1867,6 +1873,10 @@ a.divLink {
   position: absolute;
   bottom: 30px;
   font-weight: bold !important; }
+
+.brandHero--scroll a {
+  color: #fff;
+  font-family: 'Sorts Mill Goudy', serif; }
 
 .brandHero--scroll .bounce {
   position: absolute;
