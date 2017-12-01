@@ -52,7 +52,7 @@
 						<div class="brandHero--logo">
 							<img src="<?php echo mediaURLConv('img/wandl-logo-lite.svg')?>"/>
 						</div>
-						<p class="brandHero--description">
+						<p class="brandHero--description hidden-xs hidden-sm">
 							Willow &amp; Lark is a new yarn brand celebrating beautifully British design.
 							From colours inspired by Britain's natural landscapes, to the quality and quirky touches of British design at its best,
 							we've paid attention to every detail so your Willow &amp; Lark projects are always a joy to work with, wear and give.
@@ -85,12 +85,16 @@
 					<div class="col-md-10">
 						<div class="row">
 							<div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-							</div>
+								<p class="brandCollection--description visible-sm">
+						Willow &amp; Lark is a new yarn brand celebrating beautifully British design.
+							From colours inspired by Britain's natural landscapes, to the quality and quirky touches of British design at its best,
+							we've paid attention to every detail so your Willow &amp; Lark projects are always a joy to work with, wear and give.
+							</p>
+								</div>
 						</div>
 						
 						<!--Collection 1-->
 						<div class="brandCollection section" id="ramble">
-							<div class="separator"></div>
 							<div class="row">
 								<div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
 									<div class="brandCollection--range">A really splendid superwash wool</div>

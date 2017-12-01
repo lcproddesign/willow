@@ -120,12 +120,12 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 }
 .brandCollections {position: relative; padding-top:42px; background: url(../img/brandbackground1.jpg) no-repeat 82% 40px; background-size: 80% auto;
 	@media (max-width: $screen-sm-max) {padding-top:30px;}
-	@media (max-width: $screen-xs-max) {padding-top:6px;} }
+	@media (max-width: $screen-xs-max) {padding-top:18px; padding-bottom:6px;} }
 .brandCollection {text-align: center; padding:$inner-padding;
 	@media (max-width: $screen-xs-max) {padding:0} }
 .brandCollection .col-xs-6, .brandCollection .col-xs-12 {
 	@media (max-width: $screen-xs-max) {margin:18px 0 12px 0;} }
-.brandCollection--description {font-size:$base-font; margin-bottom:24px;}
+.brandCollection--description {font-size:$base-font; margin-bottom:24px; text-align:center;}
 .brandCollection--range {@extend .brandPretitle; margin-bottom:12px;}
 .brandCollection--title {@extend .brandTitle;
 	@media (max-width: $screen-xs-max) {margin-bottom:0;}}
@@ -148,7 +148,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandTile--description {color:#fff; font-size:$base-font; line-height:$line-height; text-align:left;}
 .brandTile--actions{position: absolute; bottom: 24px; left:0; right:0;}
 .brandTile--name {@extend .brandSubtitle;}
-.brandFullColTile--name {@extend .brandSubtitle; margin: 20px 0 10px;}
+.brandFullColTile--name {@extend .brandSubtitle; margin: 20px 0 10px;
+	@media (max-width: $screen-xs-max) {font-size:14px;}}
 .brandFullColTile--name .blend{display:block; color:$gry3;}
 .brandTile--actions .btn:first-child {margin-right:6px;}
 .brandTile--actions .btn:last-child {margin-left:6px;}

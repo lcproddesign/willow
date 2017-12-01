@@ -2840,7 +2840,8 @@ a.divLink {
       padding-top: 30px; } }
   @media (max-width: 767px) {
     .brandCollections {
-      padding-top: 6px; } }
+      padding-top: 18px;
+      padding-bottom: 6px; } }
 
 .brandCollection {
   text-align: center;
@@ -2855,7 +2856,8 @@ a.divLink {
 
 .brandCollection--description {
   font-size: 16px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  text-align: center; }
 
 .brandCollection--range {
   margin-bottom: 12px; }
@@ -2929,6 +2931,9 @@ a.divLink {
 
 .brandFullColTile--name {
   margin: 20px 0 10px; }
+  @media (max-width: 767px) {
+    .brandFullColTile--name {
+      font-size: 14px; } }
 
 .brandFullColTile--name .blend {
   display: block;
@@ -3461,7 +3466,8 @@ a.divLink {
       padding-top: 30px; } }
   @media (max-width: 767px) {
     .brandCollections {
-      padding-top: 6px; } }
+      padding-top: 18px;
+      padding-bottom: 6px; } }
 
 .brandCollection {
   text-align: center;
@@ -3476,7 +3482,8 @@ a.divLink {
 
 .brandCollection--description {
   font-size: 16px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  text-align: center; }
 
 .brandCollection--range {
   margin-bottom: 12px; }
@@ -3550,6 +3557,9 @@ a.divLink {
 
 .brandFullColTile--name {
   margin: 20px 0 10px; }
+  @media (max-width: 767px) {
+    .brandFullColTile--name {
+      font-size: 14px; } }
 
 .brandFullColTile--name .blend {
   display: block;
