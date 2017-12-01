@@ -94,6 +94,7 @@
 						</div>
 						
 						<!--Collection 1-->
+						<div class="separator hidden-xs"></div>
 						<div class="brandCollection section" id="ramble">
 							<div class="row">
 								<div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
