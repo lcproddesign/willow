@@ -303,33 +303,36 @@
   background-color: #304466; }
 
 #nest-colour19 {
-  background-color: #f5d9cc; }
+  background-color: #1f1f2c; }
 
 #nest-colour20 {
-  background-color: #dcb5af; }
+  background-color: #f5d9cc; }
 
 #nest-colour21 {
-  background-color: #eaaccb; }
+  background-color: #dcb5af; }
 
 #nest-colour22 {
-  background-color: #d46b77; }
+  background-color: #eaaccb; }
 
 #nest-colour23 {
-  background-color: #be4380; }
+  background-color: #d46b77; }
 
 #nest-colour24 {
-  background-color: #b5273d; }
+  background-color: #be4380; }
 
 #nest-colour25 {
-  background-color: #d7cad3; }
+  background-color: #b5273d; }
 
 #nest-colour26 {
-  background-color: #c3a9b6; }
+  background-color: #d7cad3; }
 
 #nest-colour27 {
-  background-color: #78617a; }
+  background-color: #c3a9b6; }
 
 #nest-colour28 {
+  background-color: #78617a; }
+
+#nest-colour29 {
   background-color: #7d3f52; }
 
 @-webkit-keyframes bounce {
@@ -1057,6 +1060,7 @@
   .hidden-print {
     display: none !important; } }
 
+/*Var define*/
 /*LC specific overrides*/
 #main {
   margin: 0;
@@ -1508,13 +1512,13 @@ a.divLink {
         padding: 0 20px;
         margin-bottom: 20px; } }
   .brandTile--colours.nest {
-    padding: 10px 21%; }
+    padding: 10px 20.5%; }
     @media (max-width: 1199px) {
       .brandTile--colours.nest {
-        padding: 10px 20%; } }
+        padding: 10px 18.5%; } }
     @media (max-width: 991px) {
       .brandTile--colours.nest {
-        padding: 10px 110px; } }
+        padding: 10px 105px; } }
     @media (max-width: 767px) {
       .brandTile--colours.nest {
         padding: 0 20px;
@@ -1540,13 +1544,13 @@ a.divLink {
       margin-bottom: 20px; } }
 
 /*Little hack for color dots layout for woodland : 0 */
-#wood-colour12 {
+#wood-colour12, #nest-colour14 {
   margin-right: 10px; }
   @media (max-width: 991px) {
-    #wood-colour12 {
+    #wood-colour12, #nest-colour14 {
       margin-right: 10px; } }
   @media (max-width: 767px) {
-    #wood-colour12 {
+    #wood-colour12, #nest-colour14 {
       margin-right: 3px; } }
 
 .brandTile--colours .yarnColour {
@@ -1677,6 +1681,7 @@ a.divLink {
   width: 100%;
   height: 100%; }
 
+/*Var define*/
 /*LC specific overrides*/
 #main {
   margin: 0;
@@ -2128,13 +2133,13 @@ a.divLink {
         padding: 0 20px;
         margin-bottom: 20px; } }
   .brandTile--colours.nest {
-    padding: 10px 21%; }
+    padding: 10px 20.5%; }
     @media (max-width: 1199px) {
       .brandTile--colours.nest {
-        padding: 10px 20%; } }
+        padding: 10px 18.5%; } }
     @media (max-width: 991px) {
       .brandTile--colours.nest {
-        padding: 10px 110px; } }
+        padding: 10px 105px; } }
     @media (max-width: 767px) {
       .brandTile--colours.nest {
         padding: 0 20px;
@@ -2160,13 +2165,13 @@ a.divLink {
       margin-bottom: 20px; } }
 
 /*Little hack for color dots layout for woodland : 0 */
-#wood-colour12 {
+#wood-colour12, #nest-colour14 {
   margin-right: 10px; }
   @media (max-width: 991px) {
-    #wood-colour12 {
+    #wood-colour12, #nest-colour14 {
       margin-right: 10px; } }
   @media (max-width: 767px) {
-    #wood-colour12 {
+    #wood-colour12, #nest-colour14 {
       margin-right: 3px; } }
 
 .brandTile--colours .yarnColour {

@@ -52,7 +52,7 @@
 						<div class="brandHero--logo">
 							<img src="<?php echo mediaURLConv('img/wandl-logo-lite.svg')?>"/>
 						</div>
-						<p class="brandHero--description hidden-sm hidden-xs">
+						<p class="brandHero--description">
 							Willow &amp; Lark is a new yarn brand celebrating beautifully British design.
 							From colours inspired by Britain's natural landscapes, to the quality and quirky touches of British design at its best,
 							we've paid attention to every detail so your Willow &amp; Lark projects are always a joy to work with, wear and give.
@@ -61,8 +61,8 @@
 				</div>
 			</div>
 			<div class="brandHero--scroll hidden-xs">
-				<div class="bounce"><img src="<?php echo mediaURLConv('img/chevron-down.svg')?>" /></div>
-				<span>Scroll To Explore</span>
+				<a href="#ramble"><div class="bounce"><img src="<?php echo mediaURLConv('img/chevron-down.svg')?>" /></div>
+				<span>Scroll To Explore</span></a>
 			</div>
 		</div>
 		<div class="brandCollections">
@@ -153,7 +153,7 @@
 									</a>
 								</div>
 								<div class="col-xs-6">
-									<a href="https://www.loveknitting.com/willow-lark-ramble" class="brandTile">
+									<a href="https://www.loveknitting.com/catherine-cardigan-in-willow-lark-ramble" class="brandTile">
 										<div class="imageContainer">
 											<img src="<?php echo mediaURLConv('img/ramble-tile1.jpg')?>"/>
 										</div>
@@ -405,34 +405,35 @@
 									</a>
 									<div class="brandFullColTile--name"><span>A mix of cashmere, extra fine merino &amp; viscose</span><span class="blend">69% Extra Fine Merino, 11% Cashmere, 20% Tencel / DK / 115m / 50g</span></div>
 									<div class="brandTile--colours nest">
-										<div class="yarnColour" id="nest-colour1"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140450"></a></div>
-										<div class="yarnColour" id="nest-colour2"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140451"></a></div>
-										<div class="yarnColour" id="nest-colour3"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140452"></a></div>
-										<div class="yarnColour" id="nest-colour4"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140453"></a></div>
-										<div class="yarnColour" id="nest-colour5"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140454"></a></div>
-										<div class="yarnColour" id="nest-colour6"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140455"></a></div>
-										<div class="yarnColour" id="nest-colour7"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140457"></a></div>
-										<div class="yarnColour" id="nest-colour8"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140456"></a></div>
-										<div class="yarnColour" id="nest-colour9"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140458"></a></div>
-										<div class="yarnColour" id="nest-colour10"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140459"></a></div>
-										<div class="yarnColour" id="nest-colour11"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140460"></a></div>
-										<div class="yarnColour" id="nest-colour12"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140461"></a></div>
-										<div class="yarnColour" id="nest-colour13"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140462"></a></div>
-										<div class="yarnColour" id="nest-colour14"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140463"></a></div>
-										<div class="yarnColour" id="nest-colour15"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140464"></a></div>
-										<div class="yarnColour" id="nest-colour16"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140465"></a></div>
-										<div class="yarnColour" id="nest-colour17"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140466"></a></div>
-										<div class="yarnColour" id="nest-colour18"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140467"></a></div>
-										<div class="yarnColour" id="nest-colour19"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140468"></a></div>
-										<div class="yarnColour" id="nest-colour20"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140469"></a></div>
-										<div class="yarnColour" id="nest-colour21"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140470"></a></div>
-										<div class="yarnColour" id="nest-colour22"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140471"></a></div>
-										<div class="yarnColour" id="nest-colour23"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140472"></a></div>
-										<div class="yarnColour" id="nest-colour24"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140473"></a></div>
-										<div class="yarnColour" id="nest-colour25"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
-										<div class="yarnColour" id="nest-colour26"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
-										<div class="yarnColour" id="nest-colour27"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
-										<div class="yarnColour" id="nest-colour28"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
+										<div class="yarnColour" id="nest-colour1"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142065"></a></div>
+										<div class="yarnColour" id="nest-colour2"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142066"></a></div>
+										<div class="yarnColour" id="nest-colour3"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142067"></a></div>
+										<div class="yarnColour" id="nest-colour4"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142068"></a></div>
+										<div class="yarnColour" id="nest-colour5"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142069"></a></div>
+										<div class="yarnColour" id="nest-colour6"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142070"></a></div>
+										<div class="yarnColour" id="nest-colour7"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142072"></a></div>
+										<div class="yarnColour" id="nest-colour8"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142073"></a></div>
+										<div class="yarnColour" id="nest-colour9"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142074"></a></div>
+										<div class="yarnColour" id="nest-colour10"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142075"></a></div>
+										<div class="yarnColour" id="nest-colour11"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142076"></a></div>
+										<div class="yarnColour" id="nest-colour12"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142077"></a></div>
+										<div class="yarnColour" id="nest-colour13"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142078"></a></div>
+										<div class="yarnColour" id="nest-colour14"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142079"></a></div>
+										<div class="yarnColour" id="nest-colour15"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142080"></a></div>
+										<div class="yarnColour" id="nest-colour16"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142081"></a></div>
+										<div class="yarnColour" id="nest-colour17"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142082"></a></div>
+										<div class="yarnColour" id="nest-colour18"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142083"></a></div>
+										<div class="yarnColour" id="nest-colour19"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142084"></a></div>
+										<div class="yarnColour" id="nest-colour20"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142085"></a></div>
+										<div class="yarnColour" id="nest-colour21"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142086"></a></div>
+										<div class="yarnColour" id="nest-colour22"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142087"></a></div>
+										<div class="yarnColour" id="nest-colour23"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142088"></a></div>
+										<div class="yarnColour" id="nest-colour24"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142089"></a></div>
+										<div class="yarnColour" id="nest-colour25"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142090"></a></div>
+										<div class="yarnColour" id="nest-colour26"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142091"></a></div>
+										<div class="yarnColour" id="nest-colour27"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142092"></a></div>
+										<div class="yarnColour" id="nest-colour28"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142093"></a></div>
+										<div class="yarnColour" id="nest-colour29"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142094"></a></div>
 									</div>
 									<a href="https://www.loveknitting.com/willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm visible-xs">
 										Shop Nest yarn

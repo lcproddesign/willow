@@ -1,3 +1,13 @@
+/*Var define*/
+
+$line-height: 1.5;
+$gry1:#333;
+$gry2:#5f6062;
+$gry3:#8b8d92;
+$gry4:#d4d4d4;
+$base-font: 16px;
+$inner-padding: 0 30px;
+
 
 /*LC specific overrides*/
 
@@ -13,7 +23,7 @@
 }
 p.brandTile--description, p.brandHero--description{color:#FFF;}
 #main .container{width:1018px;
-	@media(max-width:$screen-sm-max){width:100%;}
+	@media(max-width:$screen-sm-max){width:744px;}
 	@media(max-width:$screen-xs-max){width:100%;}}
 
 // Override extra space before footer
@@ -32,15 +42,9 @@ p.brandTile--description, p.brandHero--description{color:#FFF;}
 .brandwrap *:after {
 	@include box-sizing(border-box);
 }
-$line-height: 1.5;
-$gry1:#333;
-$gry2:#5f6062;
-$gry3:#8b8d92;
-$gry4:#d4d4d4;
-$base-font: 16px;
-$inner-padding: 0 30px;
+
 //Bootstrap Defaullt button style override
-.btn {display:inline-block; min-width: 40%; border-radius:2px; height:40px; line-height:24px;}
+.btn {display:inline-block; min-width: 40%; border-radius:2px; height:40px; line-height:22px; font-size:14px;}
 .btn-default{border:1px solid $gry4; color:#FFF; background-color:transparent;
 &:hover {background-color:rgba(255, 255, 255,0.2); color:#FFF; transition: background-color 0.3s ease;}
 }
@@ -64,9 +68,9 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 	@media (max-width: $screen-xs-max) {font-size:16px; margin: 18px 0 12px;} }
 .brandwrap {font-family: 'Sorts Mill Goudy', serif; padding-bottom:60px;}
 .brandwrap a {text-decoration: none;}
-.brandHero {display: flex; align-items:center; max-height:600px; height: 90vh; justify-content:center; background: url(../img/brandHero.jpg) no-repeat center center; background-size: 100% auto; position:relative;
-	@media (max-width: $screen-sm-max) {height: 40vh;}
-	@media (max-width: $screen-xs-max) { display: block; max-height:inherit; height: auto; background: none;} }
+.brandHero {display: flex; align-items:center; max-height:600px; height: 90vh; justify-content:center; background: url(../img/brandHero.jpg) #cfc7b1 no-repeat center center; background-size: 100% auto; position:relative;
+	@media (max-width: $screen-sm-max) {height: 60vh;}
+	@media (max-width: $screen-xs-max) { height: auto; display: block; max-height:inherit; background: none;} }
 .brandHero [class*='col-'] {
 	@media (max-width: $screen-xs-max) { padding-right:0; padding-left:0;} }
 .brandHero--wrapper {color:#FFF;}
@@ -77,6 +81,7 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .brandHero--description {font-size:$base-font; text-align: center; line-height:$line-height; color:#FFF; padding:16px 0; font-weight:bold !important;
 	@media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
 .brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px; font-weight:bold !important;}
+.brandHero--scroll a{color:#fff; font-family:'Sorts Mill Goudy', serif;}
 .brandHero--scroll .bounce {position: absolute;bottom: 30px;left: 50% ;width:30px;height: 30px;margin-left:-15px;
  	@include prefix(( animation: bounce 2s infinite), webkit moz o)}
 .brandNav {padding-top:30px; width:145px;}
@@ -157,9 +162,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	&.plume{ padding: 10px 22.6%;
 		@media (max-width: $screen-sm-max) {padding: 10px 130px;}
 		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
-	&.nest{ padding: 10px 21%;
-		@media (max-width: $screen-md-max) {padding: 10px 20%;}
-		@media (max-width: $screen-sm-max) {padding: 10px 110px;}
+	&.nest{ padding: 10px 20.5%;
+		@media (max-width: $screen-md-max) {padding: 10px 18.5%;}
+		@media (max-width: $screen-sm-max) {padding: 10px 105px;}
 		@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 	&.woodland{ padding: 10px 24.3%;
 		@media (max-width: $screen-md-max) {padding: 10px 22.5%;}
@@ -168,7 +173,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	@media (max-width: $screen-sm-max) {padding: 0 50px;}
 	@media (max-width: $screen-xs-max) {padding: 0 20px;margin-bottom:20px;}}
 /*Little hack for color dots layout for woodland : 0 */
-#wood-colour12 {margin-right:10px;
+#wood-colour12, #nest-colour14 {margin-right:10px;
 	@media (max-width: $screen-sm-max) {margin-right:10px;}
 	@media (max-width: $screen-xs-max) {margin-right:3px;}
 }
