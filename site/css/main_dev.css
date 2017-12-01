@@ -2595,6 +2595,11 @@ p.brandTile--description, p.brandHero--description {
 .btn-primary:hover {
   transition: background-color 0.3s ease; }
 
+.btn-secondary, .btn-secondary:hover {
+  border: 1px solid #29c0d1;
+  color: #29c0d1;
+  background: none; }
+
 a.divLink {
   position: absolute;
   width: 100%;
@@ -2665,7 +2670,8 @@ a.divLink {
   position: relative; }
   @media (max-width: 991px) {
     .brandHero {
-      height: 60vh; } }
+      height: 60vh;
+      background-size: cover; } }
   @media (max-width: 767px) {
     .brandHero {
       height: auto;
@@ -2688,7 +2694,7 @@ a.divLink {
     .brandHero--logo {
       display: flex;
       padding-bottom: 0;
-      background: url(../img/brandHero.jpg) no-repeat center top;
+      background: url(../img/brandHero.jpg) no-repeat center center;
       background-size: 100% auto; } }
 
 .brandHero--logo img {
@@ -2795,7 +2801,7 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: 6770px; }
+  top: 6895px; }
 
 .imageContainer {
   position: relative;
@@ -3145,6 +3151,15 @@ a.divLink {
 .brandProjects--tile img {
   width: 100%;
   height: 100%; }
+
+.exploreAll {
+  margin: 0px auto 60px auto; }
+  @media (max-width: 991px) {
+    .exploreAll {
+      margin: 12px 0 36px 0; } }
+  @media (max-width: 767px) {
+    .exploreAll {
+      margin: 12px 0 36px 0; } }
 
 /*Var define*/
 /*LC specific overrides*/
@@ -3221,6 +3236,11 @@ p.brandTile--description, p.brandHero--description {
 .btn-primary:hover {
   transition: background-color 0.3s ease; }
 
+.btn-secondary, .btn-secondary:hover {
+  border: 1px solid #29c0d1;
+  color: #29c0d1;
+  background: none; }
+
 a.divLink {
   position: absolute;
   width: 100%;
@@ -3291,7 +3311,8 @@ a.divLink {
   position: relative; }
   @media (max-width: 991px) {
     .brandHero {
-      height: 60vh; } }
+      height: 60vh;
+      background-size: cover; } }
   @media (max-width: 767px) {
     .brandHero {
       height: auto;
@@ -3314,7 +3335,7 @@ a.divLink {
     .brandHero--logo {
       display: flex;
       padding-bottom: 0;
-      background: url(../img/brandHero.jpg) no-repeat center top;
+      background: url(../img/brandHero.jpg) no-repeat center center;
       background-size: 100% auto; } }
 
 .brandHero--logo img {
@@ -3421,7 +3442,7 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: 6770px; }
+  top: 6895px; }
 
 .imageContainer {
   position: relative;
@@ -3771,3 +3792,12 @@ a.divLink {
 .brandProjects--tile img {
   width: 100%;
   height: 100%; }
+
+.exploreAll {
+  margin: 0px auto 60px auto; }
+  @media (max-width: 991px) {
+    .exploreAll {
+      margin: 12px 0 36px 0; } }
+  @media (max-width: 767px) {
+    .exploreAll {
+      margin: 12px 0 36px 0; } }
