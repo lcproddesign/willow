@@ -130,6 +130,7 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .brandCollection--description {font-size:$base-font; margin-bottom:24px; text-align:center;}
 .brandCollection--range {@extend .brandPretitle; margin-bottom:12px;}
 .brandCollection--title {@extend .brandTitle;
+	@media (max-width: $screen-sm-max) {margin-bottom:12px;}
 	@media (max-width: $screen-xs-max) {margin-bottom:0;}}
 .brandTile {position: relative; display: flex; height: 100%;}
 .brandTile:before {opacity: 0; visibility: hidden; content:" "; position: absolute; height: 100%; width:100%; background: rgba(0,0,0,0.3); transition:all .2s ease-in-out;}

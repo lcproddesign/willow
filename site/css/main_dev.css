@@ -2870,6 +2870,10 @@ a.divLink {
 .brandCollection--range {
   margin-bottom: 12px; }
 
+@media (max-width: 991px) {
+  .brandCollection--title {
+    margin-bottom: 12px; } }
+
 @media (max-width: 767px) {
   .brandCollection--title {
     margin-bottom: 0; } }
@@ -3516,6 +3520,10 @@ a.divLink {
 
 .brandCollection--range {
   margin-bottom: 12px; }
+
+@media (max-width: 991px) {
+  .brandCollection--title {
+    margin-bottom: 12px; } }
 
 @media (max-width: 767px) {
   .brandCollection--title {
