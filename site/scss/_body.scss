@@ -19,7 +19,7 @@ $inner-padding: 0 30px;
     padding-bottom: inherit;
 }
 .cms-page-view #main p.brandCollection--description {
-    margin-bottom: 24px;
+    margin-bottom: 36px;
 }
 p.brandTile--description, p.brandHero--description{color:#FFF;}
 #main .container{width:1018px;
@@ -104,7 +104,8 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .brandNav--nav li.selected a {color:$gry1;}
 #brandNav--wrap {position: inherit;}
 .stuck {position:fixed; top:0; z-index:9;}
-.stuck.unstuck {position:absolute; top:6895px;} //Hard coded for now...
+.stuck.unstuck {position:absolute; top:7255px;
+		@media (max-width: $screen-md-max) { top:7025px;}} //Hard coded for now...
 .imageContainer {position: relative; width:100%; overflow:hidden;/* padding-bottom:100%; */}
 .imageContainer img {width:100%; height:100%; /* position: absolute; */ top:0; left:0;
   @include prefix((
@@ -127,7 +128,7 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 	@media (max-width: $screen-xs-max) {padding:0} }
 .brandCollection .col-xs-6, .brandCollection .col-xs-12 {
 	@media (max-width: $screen-xs-max) {margin:12px 0;} }
-.brandCollection--description {font-size:$base-font; margin-bottom:24px; text-align:center;}
+.brandCollection--description {font-size:$base-font; margin-bottom:36px; text-align:center;}
 .brandCollection--range {@extend .brandPretitle; margin-bottom:12px;}
 .brandCollection--title {@extend .brandTitle;
 	@media (max-width: $screen-sm-max) {margin-bottom:12px;}
@@ -214,6 +215,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	@media (max-width: $screen-xs-max) {flex:33.333333333%} }
 .brandProjects--tile img {width:100%; height: 100%;}
 
-.exploreAll{ margin:0px auto 60px auto;
-   	@media (max-width: $screen-sm-max) {margin:12px 0 36px 0; }
-   	@media (max-width: $screen-xs-max) {margin:12px 0 36px 0; }}
+.exploreAll{ margin:0px auto 0px auto;
+   	@media (max-width: $screen-sm-max) {margin:12px 0 12px 0; }
+   	@media (max-width: $screen-xs-max) {margin:12px 0 12px 0; }}
+.exploreAll.last { margin:0px auto 60px auto;
+@media (max-width: $screen-sm-max) {margin:12px 0 12px 0; }
+   	@media (max-width: $screen-xs-max) {margin:12px 0 12px 0; }}

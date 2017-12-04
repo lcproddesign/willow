@@ -222,6 +222,11 @@
 										</a>
 									</div>
 								</div>
+								<div class="row exploreAll">
+									<a href="https://www.loveknitting.com/willow-and-lark-knitting-patterns">
+										<div class="btn btn-secondary">View all patterns of Willow & Lark</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -363,6 +368,11 @@
 											Get pattern
 										</a>
 									</div>
+								</div>
+								<div class="row exploreAll">
+									<a href="https://www.loveknitting.com/willow-and-lark-knitting-patterns">
+										<div class="btn btn-secondary">View all patterns of Willow & Lark</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -510,6 +520,11 @@
 										</a>
 									</div>
 								</div>
+								<div class="row exploreAll">
+									<a href="https://www.loveknitting.com/willow-and-lark-knitting-patterns">
+										<div class="btn btn-secondary">View all patterns of Willow & Lark</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -649,12 +664,10 @@
 										</a>
 									</div>
 								</div>
-								<div class="row exploreAll">
-									<!--<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6">-->
-										<a href="https://www.loveknitting.com/willow-and-lark-knitting-patterns">
-											<div class="btn btn-secondary">View all patterns of Willow & Lark</div>
-										</a>
-									<!--</div>-->
+								<div class="row exploreAll last">
+									<a href="https://www.loveknitting.com/willow-and-lark-knitting-patterns">
+										<div class="btn btn-secondary">View all patterns of Willow & Lark</div>
+									</a>
 								</div>
 							</div>
 							

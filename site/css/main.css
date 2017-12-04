@@ -1080,7 +1080,7 @@
   padding-bottom: inherit; }
 
 .cms-page-view #main p.brandCollection--description {
-  margin-bottom: 24px; }
+  margin-bottom: 36px; }
 
 p.brandTile--description, p.brandHero--description {
   color: #FFF; }
@@ -1343,7 +1343,10 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: 6895px; }
+  top: 7255px; }
+  @media (max-width: 1199px) {
+    .stuck.unstuck {
+      top: 7025px; } }
 
 .imageContainer {
   position: relative;
@@ -1404,7 +1407,7 @@ a.divLink {
 
 .brandCollection--description {
   font-size: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
   text-align: center; }
 
 .brandCollection--range {
@@ -1703,13 +1706,22 @@ a.divLink {
   height: 100%; }
 
 .exploreAll {
-  margin: 0px auto 60px auto; }
+  margin: 0px auto 0px auto; }
   @media (max-width: 991px) {
     .exploreAll {
-      margin: 12px 0 36px 0; } }
+      margin: 12px 0 12px 0; } }
   @media (max-width: 767px) {
     .exploreAll {
-      margin: 12px 0 36px 0; } }
+      margin: 12px 0 12px 0; } }
+
+.exploreAll.last {
+  margin: 0px auto 60px auto; }
+  @media (max-width: 991px) {
+    .exploreAll.last {
+      margin: 12px 0 12px 0; } }
+  @media (max-width: 767px) {
+    .exploreAll.last {
+      margin: 12px 0 12px 0; } }
 
 /*Var define*/
 /*LC specific overrides*/
@@ -1731,7 +1743,7 @@ a.divLink {
   padding-bottom: inherit; }
 
 .cms-page-view #main p.brandCollection--description {
-  margin-bottom: 24px; }
+  margin-bottom: 36px; }
 
 p.brandTile--description, p.brandHero--description {
   color: #FFF; }
@@ -1994,7 +2006,10 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: 6895px; }
+  top: 7255px; }
+  @media (max-width: 1199px) {
+    .stuck.unstuck {
+      top: 7025px; } }
 
 .imageContainer {
   position: relative;
@@ -2055,7 +2070,7 @@ a.divLink {
 
 .brandCollection--description {
   font-size: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
   text-align: center; }
 
 .brandCollection--range {
@@ -2354,10 +2369,19 @@ a.divLink {
   height: 100%; }
 
 .exploreAll {
-  margin: 0px auto 60px auto; }
+  margin: 0px auto 0px auto; }
   @media (max-width: 991px) {
     .exploreAll {
-      margin: 12px 0 36px 0; } }
+      margin: 12px 0 12px 0; } }
   @media (max-width: 767px) {
     .exploreAll {
-      margin: 12px 0 36px 0; } }
+      margin: 12px 0 12px 0; } }
+
+.exploreAll.last {
+  margin: 0px auto 60px auto; }
+  @media (max-width: 991px) {
+    .exploreAll.last {
+      margin: 12px 0 12px 0; } }
+  @media (max-width: 767px) {
+    .exploreAll.last {
+      margin: 12px 0 12px 0; } }
