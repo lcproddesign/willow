@@ -147,7 +147,7 @@
 											<div class="yarnColour" id="ram-colour29"><a class="divLink" href="https://www.loveknitting.com/willow-lark-ramble?sku=10139493"></a></div>
 											<div class="yarnColour" id="ram-colour30"><a class="divLink" href="https://www.loveknitting.com/willow-lark-ramble?sku=10139491"></a></div>
 										</div>
-										<a href="https://www.loveknitting.com/willow-lark-ramble" class="brandTile--cta btn btn-primary visible-sm visible-xs">
+										<a href="https://www.loveknitting.com/willow-lark-ramble" class="brandTile--cta btn btn-primary">
 											Shop Ramble yarn
 										</a>
 									</div>
@@ -291,7 +291,7 @@
 											<div class="yarnColour" id="plu-colour25"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10140474"></a></div>
 											<div class="yarnColour" id="plu-colour26"><a class="divLink" href="https://www.loveknitting.com/willow-lark-plume?sku=10143074"></a></div>
 										</div>
-										<a href="https://www.loveknitting.com/willow-lark-plume" class="brandTile--cta btn btn-primary visible-sm visible-xs">
+										<a href="https://www.loveknitting.com/willow-lark-plume" class="brandTile--cta btn btn-primary">
 											Shop Plume yarn
 										</a>
 									</div>
@@ -434,7 +434,7 @@
 											<div class="yarnColour" id="nest-colour28"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142093"></a></div>
 											<div class="yarnColour" id="nest-colour29"><a class="divLink" href="https://www.loveknitting.com/willow-lark-nest?sku=10142094"></a></div>
 										</div>
-										<a href="https://www.loveknitting.com/willow-lark-nest" class="brandTile--cta btn btn-primary visible-sm visible-xs">
+										<a href="https://www.loveknitting.com/willow-lark-nest" class="brandTile--cta btn btn-primary">
 											Shop Nest yarn
 										</a>
 									</div>
@@ -575,7 +575,7 @@
 											<div class="yarnColour" id="wood-colour24"><a class="divLink" href="https://www.loveknitting.com/willow-lark-woodland?sku=10140983"></a></div>
 											<div class="yarnColour" id="wood-colour25"><a class="divLink" href="https://www.loveknitting.com/willow-lark-woodland?sku=10140984"></a></div>
 										</div>
-										<a href="https://www.loveknitting.com/willow-lark-woodland" class="brandTile--cta btn btn-primary visible-sm visible-xs">
+										<a href="https://www.loveknitting.com/willow-lark-woodland" class="brandTile--cta btn btn-primary">
 											Shop Woodland yarn
 										</a>
 									</div>

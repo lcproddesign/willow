@@ -155,8 +155,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .brandFullColTile--name .blend{display:block; color:$gry3;}
 .brandTile--actions .btn:first-child {margin-right:6px;}
 .brandTile--actions .btn:last-child {margin-left:6px;}
-.brandTile--cta {margin-bottom:24px;}
-.brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 10px 150px; margin-bottom:40px;
+.brandTile--cta {margin-bottom:42px;
+	@media (max-width: $screen-xs-max) {margin-bottom:12px;display:block;}}
+.brandTile--colours{display: flex;flex-direction: row;  flex-wrap: wrap; justify-content:center; padding: 10px 150px; margin-bottom:12px;
 	@media (max-width: $screen-sm-max) {margin-bottom:18px;} 
 	&.ramble{ padding: 10px 18.7%;
 		@media (max-width: $screen-sm-max) {padding: 10px 100px;}

@@ -1494,7 +1494,11 @@ a.divLink {
   margin-left: 6px; }
 
 .brandTile--cta {
-  margin-bottom: 24px; }
+  margin-bottom: 42px; }
+  @media (max-width: 767px) {
+    .brandTile--cta {
+      margin-bottom: 12px;
+      display: block; } }
 
 .brandTile--colours {
   display: flex;
@@ -1502,7 +1506,7 @@ a.divLink {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px 150px;
-  margin-bottom: 40px; }
+  margin-bottom: 12px; }
   @media (max-width: 991px) {
     .brandTile--colours {
       margin-bottom: 18px; } }
@@ -2137,7 +2141,11 @@ a.divLink {
   margin-left: 6px; }
 
 .brandTile--cta {
-  margin-bottom: 24px; }
+  margin-bottom: 42px; }
+  @media (max-width: 767px) {
+    .brandTile--cta {
+      margin-bottom: 12px;
+      display: block; } }
 
 .brandTile--colours {
   display: flex;
@@ -2145,7 +2153,7 @@ a.divLink {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px 150px;
-  margin-bottom: 40px; }
+  margin-bottom: 12px; }
   @media (max-width: 991px) {
     .brandTile--colours {
       margin-bottom: 18px; } }
