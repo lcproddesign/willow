@@ -83,7 +83,7 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .brandHero--description {font-size:$base-font; text-align: center; line-height:$line-height; color:#FFF; padding:16px 0; font-weight:bold !important;
 	@media (max-width: $screen-xs-max) {color:inherit; padding: 12px 24px;} }
 .brandHero--scroll {@extend .brandPretitle; color:#fff; text-align: center; width:100%; position:absolute; bottom: 30px; font-weight:bold !important;}
-.brandHero--scroll a{color:#fff; font-family:'Sorts Mill Goudy', serif;}
+.brandHero--scroll a, .brandHero--scroll a:hover, .brandHero--scroll a:visited{color:#fff!important; font-family:'Sorts Mill Goudy', serif;}
 .brandHero--scroll .bounce {position: absolute;bottom: 30px;left: 50% ;width:30px;height: 30px;margin-left:-15px;
  	@include prefix(( animation: bounce 2s infinite), webkit moz o)}
 .brandNav {padding-top:30px; width:145px;}

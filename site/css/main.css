@@ -1266,8 +1266,8 @@ a.divLink {
   bottom: 30px;
   font-weight: bold !important; }
 
-.brandHero--scroll a {
-  color: #fff;
+.brandHero--scroll a, .brandHero--scroll a:hover, .brandHero--scroll a:visited {
+  color: #fff !important;
   font-family: 'Sorts Mill Goudy', serif; }
 
 .brandHero--scroll .bounce {
@@ -1909,8 +1909,8 @@ a.divLink {
   bottom: 30px;
   font-weight: bold !important; }
 
-.brandHero--scroll a {
-  color: #fff;
+.brandHero--scroll a, .brandHero--scroll a:hover, .brandHero--scroll a:visited {
+  color: #fff !important;
   font-family: 'Sorts Mill Goudy', serif; }
 
 .brandHero--scroll .bounce {
