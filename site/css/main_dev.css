@@ -2598,7 +2598,9 @@ p.brandTile--description, p.brandHero--description {
 .btn-secondary, .btn-secondary:hover {
   border: 1px solid #29c0d1;
   color: #29c0d1;
-  background: none; }
+  background: none;
+  height: 40px;
+  line-height: 20px; }
 
 a.divLink {
   position: absolute;
@@ -3239,7 +3241,9 @@ p.brandTile--description, p.brandHero--description {
 .btn-secondary, .btn-secondary:hover {
   border: 1px solid #29c0d1;
   color: #29c0d1;
-  background: none; }
+  background: none;
+  height: 40px;
+  line-height: 20px; }
 
 a.divLink {
   position: absolute;
