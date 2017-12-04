@@ -104,8 +104,7 @@ filter: alpha(opacity=0);}/*workaround to make clickable in IE */
 .brandNav--nav li.selected a {color:$gry1;}
 #brandNav--wrap {position: inherit;}
 .stuck {position:fixed; top:0; z-index:9;}
-.stuck.unstuck {position:absolute; top:7255px;
-		@media (max-width: $screen-md-max) { top:7025px;}} //Hard coded for now...
+.stuck.unstuck {position:absolute; top:7355px;} //Hard coded for now...
 .imageContainer {position: relative; width:100%; overflow:hidden;/* padding-bottom:100%; */}
 .imageContainer img {width:100%; height:100%; /* position: absolute; */ top:0; left:0;
   @include prefix((
@@ -151,9 +150,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	@media (max-width: $screen-xs-max) {display: none;} }
 .brandTile--description {color:#fff; font-size:$base-font; line-height:$line-height; text-align:left;}
 .brandTile--actions{position: absolute; bottom: 24px; left:0; right:0;}
-.brandTile--name {@extend .brandSubtitle;}
-.brandFullColTile--name {@extend .brandSubtitle; margin: 20px 0 10px;
-	@media (max-width: $screen-xs-max) {font-size:14px;}}
+.brandTile--name {@extend .brandSubtitle;
+	@media (max-width: $screen-xs-max) {font-size:15px;}}
+.brandFullColTile--name {@extend .brandSubtitle; margin: 20px 0 10px;}
 .brandFullColTile--name .blend{display:block; color:$gry3;}
 .brandTile--actions .btn:first-child {margin-right:6px;}
 .brandTile--actions .btn:last-child {margin-left:6px;}

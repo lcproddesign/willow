@@ -2803,10 +2803,7 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: 7255px; }
-  @media (max-width: 1199px) {
-    .stuck.unstuck {
-      top: 7025px; } }
+  top: 7355px; }
 
 .imageContainer {
   position: relative;
@@ -2944,11 +2941,12 @@ a.divLink {
   left: 0;
   right: 0; }
 
+@media (max-width: 767px) {
+  .brandTile--name {
+    font-size: 15px; } }
+
 .brandFullColTile--name {
   margin: 20px 0 10px; }
-  @media (max-width: 767px) {
-    .brandFullColTile--name {
-      font-size: 14px; } }
 
 .brandFullColTile--name .blend {
   display: block;
@@ -3466,10 +3464,7 @@ a.divLink {
 
 .stuck.unstuck {
   position: absolute;
-  top: 7255px; }
-  @media (max-width: 1199px) {
-    .stuck.unstuck {
-      top: 7025px; } }
+  top: 7355px; }
 
 .imageContainer {
   position: relative;
@@ -3607,11 +3602,12 @@ a.divLink {
   left: 0;
   right: 0; }
 
+@media (max-width: 767px) {
+  .brandTile--name {
+    font-size: 15px; } }
+
 .brandFullColTile--name {
   margin: 20px 0 10px; }
-  @media (max-width: 767px) {
-    .brandFullColTile--name {
-      font-size: 14px; } }
 
 .brandFullColTile--name .blend {
   display: block;
